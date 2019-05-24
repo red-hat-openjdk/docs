@@ -1,0 +1,34 @@
+[id="installing_openjdk_msi_installer"]
+= Installing {prod} with the MSI Installer
+
+The {comp} MSI-based installer includes the following features:
+
+**jdk**::
+  Java Development Kit (JDK) files.
+**jdk-registry-standard**::
+  Registry keys:
++
+----
+HKLM\Software\JavaSoft\JDK\<version>, entries:
+    JavaHome: <INSTALLDIR>
+    RuntimeLib: <INSTALLDIR>\bin\server\jvm.dll
+
+HKLM\Software\JavaSoft\JDK, entries:
+    CurrentVersion: <version>
+----
+**jdk_env_path**::
+  Appends `<INSTALLDIR>\bin` to the system `%PATH%` environment variable.
+**jdk_env_java_home**::
+  Sets `<INSTALLDIR>` to the system `%JAVA_HOME%` environment variable.
+**jdk_env_vendor_java_home**::
+  Sets `<INSTALLDIR>` to the system `%REDHAT_JAVA_HOME%` environment variable.
+**jdk_registry_jar**::
+  Association for JAR files. Launch JAR files with the OpenJDK context menu.
+**jmc**::
+  JDK Mission Control files, installed into `<INSTALLDIR>\missioncontrol`.
+**jmc_env**::
+  Appends `<INSTALLDIR>\missioncontrol` to the system `%PATH%` environment variable.
+
+.Procedure
+. link:{openjdk-download-url}[Download the MSI-based installer] of {comp} for your architecture.
+. Run the installer and follow the on-screen instructions to install {comp} and the desired extra components.
