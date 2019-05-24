@@ -1,0 +1,9 @@
+[id="openjdk_for_windows_installation_options"]
+= {comp} Installation Options
+
+{comp} can be installed manually using a ZIP bundle or through a graphical user interface using an MSI-based installer.
+
+Depending on your circumstance, use one of the following installation methods:
+
+* <<installing_openjdk_zip_bundle>>
+* <<installing_openjdk_msi_installer>>
