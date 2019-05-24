@@ -1,6 +1,6 @@
 include::common/attributes.adoc[]
 
-= Strimzi documentation contributor guide
+= OpenJDK documentation contributor guide
 
 include::introduction.adoc[leveloffset=+1]
 
