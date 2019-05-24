@@ -1,1 +1,98 @@
-//Attributes
+// Our docinfo.xml
+:docinfo:
+
+// AsciiDoc rendering
+:source-highlighter: prettify
+:last-update-label!:
+:attribute-missing: warn
+:experimental:
+
+// Guide directory structure
+:imagesdir: images
+:filesdir: files
+
+// special chars
+:cpp: C++
+
+// Platforms
+:rh: Red{nbsp}Hat
+:rhel: {rh} Enterprise{nbsp}Linux
+:mac: macOS
+:fed: Fedora
+:msw: Microsoft Windows
+:ocp: OpenShift Container Platform
+:osd: OpenShift Dedicated
+:rhocp: {rh} {ocp}
+:rhcc: {rh} Container Catalog
+:rhcc-url: registry.access.redhat.com
+:rhcp: {rh} Customer Portal
+:rhsm: Red{nbsp}Hat Subscription Management
+:rhio-url: registry.redhat.io
+
+// OpenShift versions
+:ocp-ver: 3.11
+:osd-ver: 3.11
+
+// prod naming, versions
+:prod: {rh} Developer Tools
+:prod-ver: 2019.2
+
+// devstudio naming
+:devstudio: Developer{nbsp}Studio
+:rhdevstudio: {rh} {devstudio}
+:devstudio-ver: 12.11
+:rhdevstudio-ver: {rhdevstudio}{nbsp}{devstudio-ver}
+
+// OpenJDK naming & version
+:java-ver: Java{nbsp}8
+:jdk: OpenJDK
+:jdk-ver: 1.8.0_131
+
+//OpenJDK Product
+:prod: OpenJDK
+:comp-ver: 11
+:prod-ver: {comp-ver}
+:comp-ver-full: {comp-ver}.0.3
+:comp: {prod} {comp-ver} for Windows
+:openjdk-ver: {comp-ver-full}
+
+:openjdk-download-url: https://developers.redhat.com/products/openjdk/download/
+
+// CDK naming, version
+:rhcdk: {rh} Container{nbsp}Development{nbsp}Kit
+:cdk-ver: 3.2
+:rhcdk-ver: {rhcdk}{nbsp}{cdk-ver}
+
+// Developer Toolset
+:dts: {rh} Developer{nbsp}Toolset
+:dts-ver: 8
+:rhscl: {rh} Software{nbsp}Collections
+
+// RH docs
+:acc-rh-com-docs: https://access.redhat.com/documentation/en-us
+
+// RHSM docs
+:rhsm-docs-url: {acc-rh-com-docs}/red_hat_subscription_management
+
+// devstudio guide names and URLs
+:rhdevstudio-rn: {rhdevstudio-ver} Release Notes
+:rhdevstudio-rn-url: {acc-rh-com-docs}/red_hat_jboss_developer_studio/{devstudio-ver}/html-single/release_notes_and_known_issues/
+:rhdevstudio-ig: {rhdevstudio-ver} Installation Guide
+:rhdevstudio-ig-url: {acc-rh-com-docs}/red_hat_jboss_developer_studio/{devstudio-ver}/html-single/installation_guide/
+:rhdevstudio-gs-cloud: Getting Started with Container and Cloud-based Development
+:rhdevstudio-gs-cloud-url: {acc-rh-com-docs}/red_hat_jboss_developer_studio/{devstudio-ver}/html-single/getting_started_with_container_and_cloud-based_development/
+:rhdevstudio-gs-cloud-paged-url: {acc-rh-com-docs}/red_hat_jboss_developer_studio/{devstudio-ver}/html/getting_started_with_container_and_cloud-based_development/
+
+:!isbeta:
+// define (no !) or undefine (line starts with :!)
+
+ifdef::isbeta[]
+:dashbeta: -beta
+endif::[]
+ifndef::isbeta[]
+:dashbeta:
+endif::[]
+
+// DTS User Guide docs URL
+// NOTE: Makes use of {dashbeta} defined above, thus its placement here.
+:dts-ug-docs-url: {acc-rh-com-docs}/red_hat_developer_toolset/{dts-ver}{dashbeta}/html/user_guide
