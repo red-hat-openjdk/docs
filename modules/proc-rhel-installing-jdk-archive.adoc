@@ -2,7 +2,7 @@
 = Installing the Java Development Kit with the archive bundle on {rhel}
 
 The Java Development Kit (JDK) can be manually installed using the {archive} bundle.
-This is useful if the Java administrator doesn't have root privileges on the system.
+This is useful if the Java administrator does not have root privileges on the system.
 
 .Procedure
 . link:{openjdk-rhel-archive-download-url}[Download the JDK {archive} bundle] of {comp}.
