@@ -18,11 +18,13 @@ If you are running multiple Java applications that require different Java versio
 
 . On the command line, run the following commands to install multiple versions:
 +
+[source,subs="+quotes"]
 ----
-yum install java-1.7.0-openjdk
-yum install java-1.8.0-openjdk
-yum install java-11-openjdk
+yum install java-1.8.0-openjdk --enablerepo=_<rhel-rpms>_
+yum install java-11-openjdk --enablerepo=_<rhel-rpms>_
 ----
++
+Where _`<rhel-rpms>`_ is `rhel-7-server-rpms` in RHEL 7 and `rhel-8-for-x86_64-appstream-rpms` in RHEL 8.
 
 // QE Do we need this step? Should it be a note?
 //. The repository that provides the OpenJDK version must be enabled.
