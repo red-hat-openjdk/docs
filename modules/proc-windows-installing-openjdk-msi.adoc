@@ -39,13 +39,17 @@ The {comp} MSI-based installer includes the following components and sets the fo
   Java Development Kit (JDK) {comp} files.
 
 *Properties*
-[cols=3*,options=header]
+[cols=5*,options=header]
 |===
 |Setting
 |Default
+|JDK 8
+|JDK 11
 |Description
 
 |OpenJDK Runtime - Windows Registry
+| Yes
+| Yes
 | Yes
 | The following registry keys are set
 HKLM\Software\JavaSoft\JDK\<version>, entries:
@@ -58,21 +62,49 @@ HKLM\Software\JavaSoft\JDK, entries:
 
 |OpenJDK Runtime - Path Variable
 | Yes
+| Yes
+| Yes
 | Adds the Runtime to the Path variable so it is available from the command line.
 
 |OpenJDK Runtime - JAVA_HOME System Variable
 | No
+| Yes
+| Yes
 | JAVA_HOME is used by some programs to find the Java runtime.
 
 |OpenJDK Runtime - REDHAT_JAVA_HOME System Variable
 | No
+| Yes
+| Yes
 | REDHAT_JAVA_HOME will be used in the future for Mission Control.
 
 |OpenJDK Runtime - Jar Files Association
 | No
+| Yes
+| Yes
 | This enables Jar files to be run from within Windows Explorer.
+
+| Web Start (Beta) - JNLP File Association
+| No
+| Yes
+| No
+| Enables the launching of JNLP files downloaded from the web.
+
+| Web Start (Beta) - PATH Variable
+| No
+| Yes
+| No
+| Enables the launching of JNLP files downloaded from the web from the local file system.
+
+| Web Start (Beta) - Keep Settings and Cache
+| No
+| Yes
+| No
+| Keeps settings and caches on the local file system.
 
 |Mission Control - Path Variable
 | No
+| No
+| Yes
 | Adds Mission Control to the Path Variable so it is available from the command line.
 |===
