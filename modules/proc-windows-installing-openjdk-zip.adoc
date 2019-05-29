@@ -24,4 +24,4 @@ If the path contains spaces, use the shortened path name.
 The `%JAVA_HOME%` environment variable must also be set to use some developer tools.
 Set the `%JAVA_HOME%` environment variable as follows:
 
-include::../modules/snip-add-java-home-env-variable.adoc[]
+include::../modules/snip-windows-add-java-home-env-variable.adoc[]
