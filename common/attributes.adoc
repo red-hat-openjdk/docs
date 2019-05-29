@@ -33,9 +33,6 @@
 :ocp-ver: 3.11
 :osd-ver: 3.11
 
-// prod naming, versions
-:prod: {rh} Developer Tools
-:prod-ver: 2019.2
 
 // devstudio naming
 :devstudio: Developer{nbsp}Studio
