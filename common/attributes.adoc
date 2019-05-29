@@ -34,7 +34,9 @@
 :openjdk-ver: {comp-ver-full}
 
 // URL to version (8 or 11) specific rhel archive (tar.xz or zip)
-:openjdk-rhel-archive-download-url: https://developers.redhat.com/products/openjdk/download/
+:openjdk-rhel-archive-download-url: https://access.redhat.com/downloads/content/484/ver=8/middleware---1/8/x86_64/product-software
+:openjdk-windows-archive-download-url: https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?downloadType=distributions&product=core.service.openjdk&productChanged=yes
+:openjdk-windows-installer-download-url: https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?downloadType=distributions&product=core.service.openjdk&productChanged=yes
 
 :archive: ZIP
 
