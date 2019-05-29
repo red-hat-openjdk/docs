@@ -2,10 +2,12 @@
 = Installing the Java Runtime Environment via yum on {rhel}
 
 {comp} can be installed using the system package manager `yum`. 
-This will require root privileges.
+
+.Prequisites
+* A user with root privileges.
 
 .Procedure
-. Run the relevant `yum` command for installing the package: `java-1.8.0-openjdk-headless` for JDK 8
+. Run the relevant `yum` command for installing the package. For example: `java-1.8.0-openjdk-headless` for JDK 8
 +
 ----
 # yum install java-8-openjdk-headless
