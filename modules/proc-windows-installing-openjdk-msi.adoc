@@ -1,34 +1,78 @@
-[id="installing_openjdk_msi_installer"]
+[id="proc_windows_installing_openjdk_msi"]
 = Installing {prod} with the MSI Installer
 
-The {comp} MSI-based installer includes the following features:
+The simplest way to install the {jdk} on windows.
 
-**jdk**::
-  Java Development Kit (JDK) files.
-**jdk-registry-standard**::
-  Registry keys:
+.Procedure
+. link:{openjdk-download-url}[Download the MSI-based installer] for {comp}.
+. Run the installer for {comp}.
+. Click `Next` on the Welcome Screen
+. Check `I accept the terms in the License Agreement`, then click `Next`
+. Click `Next` and accept the defaults, review the optional properties below if you wish to make changes.
+. Click `Install`
+. Click `Yes` on, "Do you want to allow this app to make changes to your device?".
+. Verify the {comp} is installed by running: `java -version` in a newly opened Command Prompt and you should see the following:
 +
 ----
+java version "1.8.0_181"
+Java(TM) SE Runtime Environment (build 1.8.0_181-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 25.181-b13, mixed mode)
+or
+openjdk version "1.8.0_212-2-redhat"
+OpenJDK Runtime Environment (build 1.8.0_212-2-redhat-b04)
+OpenJDK 64-Bit Server VM (build 25.212-b04, mixed mode)
+or
+openjdk version "11.0.3-redhat" 2019-04-16 LTS
+OpenJDK Runtime Environment 18.9 (build 11.0.3-redhat+7-LTS)
+OpenJDK 64-Bit Server VM 18.9 (build 11.0.3-redhat+7-LTS, mixed mode)
+----
+
+.(Optional)
+Select the desired extra environment settings if needed as described below
+
+
+The {comp} MSI-based installer includes the following components and sets the following properties:
+
+*Components*
+
+**JDK Files**::
+  Java Development Kit (JDK) {comp} files.
+
+*Properties*
+[cols=3*,options=header]
+|===
+|Setting
+|Default
+|Description
+
+|OpenJDK Runtime - Windows Registry
+| Yes
+| The following registry keys are set
 HKLM\Software\JavaSoft\JDK\<version>, entries:
     JavaHome: <INSTALLDIR>
     RuntimeLib: <INSTALLDIR>\bin\server\jvm.dll
 
 HKLM\Software\JavaSoft\JDK, entries:
     CurrentVersion: <version>
-----
-**jdk_env_path**::
-  Appends `<INSTALLDIR>\bin` to the system `%PATH%` environment variable.
-**jdk_env_java_home**::
-  Sets `<INSTALLDIR>` to the system `%JAVA_HOME%` environment variable.
-**jdk_env_vendor_java_home**::
-  Sets `<INSTALLDIR>` to the system `%REDHAT_JAVA_HOME%` environment variable.
-**jdk_registry_jar**::
-  Association for JAR files. Launch JAR files with the OpenJDK context menu.
-**jmc**::
-  JDK Mission Control files, installed into `<INSTALLDIR>\missioncontrol`.
-**jmc_env**::
-  Appends `<INSTALLDIR>\missioncontrol` to the system `%PATH%` environment variable.
 
-.Procedure
-. link:{openjdk-download-url}[Download the MSI-based installer] of {comp} for your architecture.
-. Run the installer and follow the on-screen instructions to install {comp} and the desired extra components.
+
+|OpenJDK Runtime - Path Variable
+| Yes
+| Adds the Runtime to the Path variable so it is available from the command line.
+
+|OpenJDK Runtime - JAVA_HOME System Variable
+| No
+| JAVA_HOME is used by some programs to find the Java runtime.
+
+|OpenJDK Runtime - REDHAT_JAVA_HOME System Variable
+| No
+| REDHAT_JAVA_HOME will be used in the future for Mission Control.
+
+|OpenJDK Runtime - Jar Files Association
+| No
+| This enables Jar files to be run from within Windows Explorer.
+
+|Mission Control - Path Variable
+| No
+| Adds Mission Control to the Path Variable so it is available from the command line.
+|===
