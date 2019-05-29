@@ -1,0 +1,26 @@
+[id="rhel_updating_openjdk_rpm"]
+= Updating {prod} via yum on {RHEL}
+
+The {comp} RPM-based installer can be updated using the system package manager `yum`. This will require root privileges.
+
+
+.Procedure
+. Check the current {comp} version. 
++
+----
+yum list installed java*
+----
++
+. Update the installed package
++
+----
+yum update java-1.8.0-openjdk.x86:64
+----
++
+. Check the current version
++
+----
+java -version
+----
++
+
