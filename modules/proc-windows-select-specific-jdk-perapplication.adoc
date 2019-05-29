@@ -1,7 +1,7 @@
 [id='select-specific_JDK_procedure_perapplication']
-= Selecting a specific JDK from the installed versions per application
+= Selecting a specific JDK from the installed versions for an application
 
-This procedure describes how to select the specific JDK per application out of the installed ones on {msw}
+You can select a specific JDK from the installed versions on {msw} for an application. 
 
 .Prerequisites
 
@@ -9,26 +9,28 @@ This procedure describes how to select the specific JDK per application out of t
 
 .Procedure
 
-. As an administrator, open the command prompt and set the prompt to `C:/`.
+. Log in as a Windows system administrator. 
+
+. On the command line, set the prompt to `C:/`.
 
 . Enter `dir /b /s java.exe` to list all of the installed JDKs on the system.
 
-. Set the value of the environment variable to your JDK (or JRE) installation path as follows:
+. Set the value of the environment variable to your JDK (or JRE) installation path:
 +
 ----
 setx -m JAVA_HOME "Path to Java"
 ----
 +
 If the path contains spaces, use the shortened path name.
-+
-. Restart the Command Prompt to reload the environment variables.
 
-. Use the following command to see the value.
+. Restart the command prompt to reload the environment variables.
+
+. Retrieve the value of the path variable:
 +
 ----
 echo %JAVA_HOME%
 ----
-. Set the value of path variable using the following command.
+. Set the value of path variable:
 +
 ----
 setx -m PATH "%PATH%;%JAVA_HOME%\bin";
