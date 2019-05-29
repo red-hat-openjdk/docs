@@ -1,5 +1,5 @@
 [id="rhel_select_jdk"]
-= Selecting a specific JDK on {rhel} installed via {archive} bundles
+= Selecting a specific JDK on {rhel} installed using {archive} bundles
 
 If you have multiple JDKs installed on {rhel} you can select a
 specific JDK using the procedure below.
