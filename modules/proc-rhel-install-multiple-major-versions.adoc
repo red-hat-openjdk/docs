@@ -14,9 +14,6 @@
 **** java-11-openjdk
 ... Click the architecture link (for example, `x86_64`). Repositories are listed in the *Repo List* column (for example, `rhel-7-server-rpms`).
 
-// QE Do we need this step? Should it be a note?
-//. The repository that provides the OpenJDK version must be enabled.
-
 . On the command line, run the following commands to install multiple versions:
 +
 ----
@@ -24,3 +21,6 @@ yum install java-1.7.0-openjdk
 yum install java-1.8.0-openjdk
 yum install java-11-openjdk
 ----
+
+// QE Do we need this step? Should it be a note?
+//. The repository that provides the OpenJDK version must be enabled.
