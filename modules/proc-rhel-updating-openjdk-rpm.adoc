@@ -18,7 +18,7 @@ yum list installed java*
 +
 [source,subs="+quotes"]
 ----
-yum update _`<verion_to_be_upgraded>`_
+yum update _`<version_to_be_upgraded>`_
 ----
 +
 . Check the current version.
