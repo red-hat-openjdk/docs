@@ -1,0 +1,11 @@
+. Open Command Prompt as an administrator.
+
+. Set the value of the environment variable to your {prod} installation path:
++
+----
+C:\> setx /m JAVA_HOME "C:\Progra~1\RedHat\java-11-openjdk-11.0.1.13-1"
+----
++
+If the path contains spaces, use the shortened path name.
+
+. Restart Command Prompt to reload the environment variables.

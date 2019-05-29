@@ -1,0 +1,35 @@
+[id="rhel_installing_openjdk_archive"]
+= Installing the Java Development Kit with the archive bundle on {rhel}
+
+The Java Development Kit (JDK) can be manually installed using the {archive} bundle.
+This is useful if the Java administrator does not have root privileges on the system.
+
+.Procedure
+. link:{openjdk-rhel-archive-download-url}[Download the JDK {archive} bundle] of {comp}.
+. Extract the contents of the {archive} bundle to a directory of your choice.
++
+----
+$ tar -xf java-11-openjdk-11.0.3.7-0.tar.xz
+----
++
+. Add the `bin` directory contained in your {comp} installation path to the `PATH` environment variable:
++
+----
+$ export PATH="/home/openjdk/java-11-openjdk-11.0.3.7-0.el6.static.jdk.openjdkportable.x86_64/bin"
+----
++
+. Verify that `javac -version` works without supplying the full path:
++
+----
+$ java -version
+javac 11.0.3
+----
++
+
+// Example URL: https://access.redhat.com/solutions/1445833 (for JAVA_HOME)
+. In order to persist the `PATH` variable setting use these instructions: _`<add-link-to-RHEL-bashrc-path-link>`_
+
+The `JAVA_HOME` environment variable must also be set to use some developer tools.
+Set the `JAVA_HOME` environment variable as follows:
+
+include::modules/proc-rhel-setting-java-home-env-variable.adoc[]

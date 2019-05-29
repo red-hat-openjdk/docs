@@ -11,85 +11,34 @@
 :imagesdir: images
 :filesdir: files
 
-// special chars
-:cpp: C++
-
 // Platforms
 :rh: Red{nbsp}Hat
 :rhel: {rh} Enterprise{nbsp}Linux
-:mac: macOS
-:fed: Fedora
 :msw: Microsoft Windows
-:ocp: OpenShift Container Platform
-:osd: OpenShift Dedicated
-:rhocp: {rh} {ocp}
-:rhcc: {rh} Container Catalog
-:rhcc-url: registry.access.redhat.com
 :rhcp: {rh} Customer Portal
-:rhsm: Red{nbsp}Hat Subscription Management
-:rhio-url: registry.redhat.io
 
-// OpenShift versions
-:ocp-ver: 3.11
-:osd-ver: 3.11
+:archive: zip
+:platform: {msw}
 
-
-// devstudio naming
-:devstudio: Developer{nbsp}Studio
-:rhdevstudio: {rh} {devstudio}
-:devstudio-ver: 12.11
-:rhdevstudio-ver: {rhdevstudio}{nbsp}{devstudio-ver}
-
-// OpenJDK naming & version
+// Java naming and version
 :java-ver: Java{nbsp}8
-:jdk: OpenJDK
-:jdk-ver: 1.8.0_131
 
-//OpenJDK Product
+// OpenJDK product naming and version
 :prod: OpenJDK
 :comp-ver: 11
-:prod-ver: {comp-ver}
 :comp-ver-full: {comp-ver}.0.3
+:prod-ver: {comp-ver}
+:prod-ver-full: {comp-ver-full}
 :comp: {prod} {comp-ver} for Windows
+:prod-long-name: {prod} {prod-ver} for {platform}
 :openjdk-ver: {comp-ver-full}
 
-:openjdk-download-url: https://developers.redhat.com/products/openjdk/download/
+// URL to version (8 or 11) specific rhel archive (tar.xz or zip)
+:openjdk-rhel-archive-download-url: https://access.redhat.com/downloads/content/484/ver=8/middleware---1/8/x86_64/product-software
+:openjdk-windows-archive-download-url: https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?downloadType=distributions&product=core.service.openjdk&productChanged=yes
+:openjdk-windows-installer-download-url: https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?downloadType=distributions&product=core.service.openjdk&productChanged=yes
 
-// CDK naming, version
-:rhcdk: {rh} Container{nbsp}Development{nbsp}Kit
-:cdk-ver: 3.2
-:rhcdk-ver: {rhcdk}{nbsp}{cdk-ver}
-
-// Developer Toolset
-:dts: {rh} Developer{nbsp}Toolset
-:dts-ver: 8
-:rhscl: {rh} Software{nbsp}Collections
+:archive: ZIP
 
 // RH docs
-:acc-rh-com-docs: https://access.redhat.com/documentation/en-us
-
-// RHSM docs
-:rhsm-docs-url: {acc-rh-com-docs}/red_hat_subscription_management
-
-// devstudio guide names and URLs
-:rhdevstudio-rn: {rhdevstudio-ver} Release Notes
-:rhdevstudio-rn-url: {acc-rh-com-docs}/red_hat_jboss_developer_studio/{devstudio-ver}/html-single/release_notes_and_known_issues/
-:rhdevstudio-ig: {rhdevstudio-ver} Installation Guide
-:rhdevstudio-ig-url: {acc-rh-com-docs}/red_hat_jboss_developer_studio/{devstudio-ver}/html-single/installation_guide/
-:rhdevstudio-gs-cloud: Getting Started with Container and Cloud-based Development
-:rhdevstudio-gs-cloud-url: {acc-rh-com-docs}/red_hat_jboss_developer_studio/{devstudio-ver}/html-single/getting_started_with_container_and_cloud-based_development/
-:rhdevstudio-gs-cloud-paged-url: {acc-rh-com-docs}/red_hat_jboss_developer_studio/{devstudio-ver}/html/getting_started_with_container_and_cloud-based_development/
-
-:!isbeta:
-// define (no !) or undefine (line starts with :!)
-
-ifdef::isbeta[]
-:dashbeta: -beta
-endif::[]
-ifndef::isbeta[]
-:dashbeta:
-endif::[]
-
-// DTS User Guide docs URL
-// NOTE: Makes use of {dashbeta} defined above, thus its placement here.
-:dts-ug-docs-url: {acc-rh-com-docs}/red_hat_developer_toolset/{dts-ver}{dashbeta}/html/user_guide
+:rh-docs-url: https://access.redhat.com/documentation/en-us

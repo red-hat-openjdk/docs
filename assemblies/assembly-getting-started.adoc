@@ -8,8 +8,8 @@ Windows builds use {rhel} RPM sources and apply all of the relevant RPM patches.
 
 {comp} includes {prod}, fonts, timezone data, and CA certificates from {rhel}.
 
-include::../modules/ref_installation_options.adoc[leveloffset=+1]
+include::../modules/ref-installation-options.adoc[leveloffset=+1]
 
-include::../modules/proc_installing_openjdk_zip.adoc[leveloffset=+1]
+include::../modules/proc-windows-installing-openjdk-zip.adoc[leveloffset=+1]
 
-include::../modules/proc_installing_openjdk_msi.adoc[leveloffset=+1]
+include::../modules/proc-windows-installing-openjdk-msi.adoc[leveloffset=+1]

@@ -1,0 +1,20 @@
+[id="rhel_installing_openjdk_rpm"]
+= Installing the Java Development Kit via yum on {rhel}
+
+{comp} can be installed using the system package manager `yum`. This will require root
+privileges.
+
+.Procedure
+. Run the relevant `yum` command for installing the package: `java-1.8.0-openjdk-devel` for JDK 8, `java-11-openjdk-devel` for JDK 11
++
+----
+# yum install java-11-openjdk-devel
+----
++
+. Verify that `javac -version` works
++
+----
+$ javac -version
+javac 11.0.3
+----
++
