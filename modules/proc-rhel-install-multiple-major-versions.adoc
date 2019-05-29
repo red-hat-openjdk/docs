@@ -1,0 +1,22 @@
+= How to Install Multiple Major Versions of OpenJDK
+
+<1> Verify the Red Hat Subscription Manager (RHSM) account has an active subscription that provides access to a repository that provides the OpenJDK version. 
+** To check available repositories:
+*** Log into the link:https://access.redhat.com[Red Hat Customer Portal (RHCP)]
+*** Click "Downloads"
+*** Click "RPM Package Search"
+*** Enter the OpenJDK version to be installed. For example:
+**** java-1.7.0-openjdk
+**** java-1.8.0-openjdk
+**** java-11-openjdk
+*** Click the architecture link (e.g. x86_64)
+**** Repositories are listed in the Repo List column (e.g. rhel-7-server-rpms)
+
+<2> The repository that provides the OpenJDK version must be enabled.
+
+<3> Install
+----
+yum install java-1.7.0-openjdk --enablerepo=rhel-7-server-rpms
+yum install java-1.8.0-openjdk --enablerepo=rhel-7-server-rpms
+yum install java-11-openjdk --enablerepo=rhel-7-server-rpms
+----
