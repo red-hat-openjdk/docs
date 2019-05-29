@@ -8,29 +8,31 @@
 // * Title: = Doing procedure A
 
 // The ID is used as an anchor for linking to the module. Avoid changing it after the module has been published to ensure existing links are not broken.
-[id='doing-one-procedure_{context}']
+[id='select-specific_JDK_procedure_perapplication{context}']
 // The `context` attribute enables module reuse. Every module's ID includes {context}, which ensures that the module has a unique ID even if it is reused multiple times in a guide.
-= Doing one procedure
+= Selecting specific JDK out of the installed versions per application
 // Start the title of a procedure module with a verb, such as Creating or Create. See also _Wording of headings_ in _The IBM Style Guide_.
 
-This paragraph is the procedure module introduction: a short description of the procedure.
+This procedure describes how to select the specific JDK per application out of the installed ones on {msw}
 
 .Prerequisites
 
-* A bulleted list of conditions that must be satisfied before the user starts following this assembly.
-* You can also link to other modules or assemblies the user must follow before starting this assembly.
-* Delete the section title and bullets if the assembly has no prerequisites.
+* More than one JDK is already installed on the system.
 
 .Procedure
 
-. Start each step with an active verb.
+. Open the command prompt( Run as administrator) and set the prompt to C:/
 
-. Include one command or action per step.
+. Type dir /b /s java.exe. This will list all the installed JDK on the system
 
-. Use an unnumbered bullet (*) if the procedure includes only one step.
+. Set the value of the environment variable to your JDK (or JRE) installation path as follows:
+   setx -m JAVA_HOME "Path to Java"
+  If the path contains spaces, use the shortened path name.
 
-.Additional resources
+. Restart Command Prompt to reload the environment variables 
 
-* A bulleted list of links to other material closely related to the contents of the procedure module.
-* For more details on writing procedure modules, see the link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
-* Use a consistent system for file names, IDs, and titles. For tips, see _Anchor Names and File Names_ in link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
+. Use the following command to see the value.
+   echo %JAVA_HOME%
+
+. Set the value of path variable using the following command.
+  setx -m PATH "%PATH%;%JAVA_HOME%\bin";
