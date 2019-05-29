@@ -33,8 +33,10 @@
 :prod-long-name: {prod} {prod-ver} for {platform}
 :openjdk-ver: {comp-ver-full}
 
-// OpenJDK download URL
-:openjdk-download-url: https://developers.redhat.com/products/openjdk/download/
+// URL to version (8 or 11) specific rhel archive (tar.xz or zip)
+:openjdk-rhel-archive-download-url: https://developers.redhat.com/products/openjdk/download/
+
+:archive: ZIP
 
 // RH docs
 :rh-docs-url: https://access.redhat.com/documentation/en-us
