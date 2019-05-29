@@ -1,5 +1,5 @@
 [id="rhel_installing_openjdk_jre_archive"]
-= Installing the Java Development Kit with the archive bundle on {rhel}
+= Installing the JDK with the archive bundle on {rhel}
 
 The Java Runtime Environment (JRE) can be manually installed using the {archive} bundle.
 This is useful if the Java administrator does not have root privileges on the system.
@@ -7,17 +7,17 @@ This is useful if the Java administrator does not have root privileges on the sy
 .Procedure
 . link:{openjdk-rhel-archive-download-url}[Download the JRE {archive} bundle] of {comp}.
 . Extract the contents of the {archive} bundle to a directory of your choice.
-// This would be replaced by an attribute call archive or file
-
 +
+[source,subs="+quotes"]
 ----
-$ tar -xf java-1.8.0-openjdk-1.8.0.181.b13-jre.x86_64.tar.xz
+$ tar -xf _`<tar-file>`_
 ----
 +
 . Add the `bin` directory contained in your {comp} installation path to the `PATH` environment variable:
 +
+[source,subs="+quotes"]
 ----
-$ export PATH="/home/openjdk/java-1.8.0-openjdk-1.8.0.181.b13-0.el6.static.jre.openjdkportable.x86_64/bin"
+$ export PATH="/home/openjdk/_`<your-directory>`_/bin"
 ----
 +
 . Verify that `java -version` works without supplying the full path:
