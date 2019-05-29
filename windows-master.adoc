@@ -2,4 +2,4 @@ include::common/attributes.adoc[]
 
 :context: windows
 
-= Using {ProductLongName}
+= Using {prod-long-name}
