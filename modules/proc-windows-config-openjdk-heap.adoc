@@ -13,6 +13,6 @@
 $ java -Xmx100m `_<your-main-class>_`
 ----
 
-.Additional Resources
+.Additional resources
 * For reference see https://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html#BABDJJFI
 
