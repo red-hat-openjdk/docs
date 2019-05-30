@@ -1,0 +1,24 @@
+[id="rhel_updating_openjdk_zip_bundle"]
+= Updating {prod} for RHEL using an archive
+
+{comp} can be manually installed using an archive. 
+This is useful if the Java administrator does not have root privileges on the system.
+
+The recommended approach to update {archive} install of {prod} is to
+redirect the generic path symlink of your JRE or JDK to the latest
+installed package.
+
+.Prequisites
+
+* Know the generic path pointing to your JDK or JRE installation. For example, `~/jdks/java-11`
+
+.Procedure
+. Remove existing *symlink* of the generic path to your JDK or JRE.
++
+----
+$ rm ~/jdks/java-11
+----
++
+. Install the latest JDK (or JRE) in your installation location (e.g. `~/jdks`)
+  using instructions for xref:proc-rhel-installing-jdk-archive.adoc[JDK] (or xref:proc-rhel-installing-jre-archive.adoc[JRE])
+
