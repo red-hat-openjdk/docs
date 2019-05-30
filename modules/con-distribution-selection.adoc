@@ -1,0 +1,40 @@
+[id="distribution-selection"]
+= Distribution selection
+
+Red Hat provides several distributions of OpenJDK.
+This module will help you select the distribution that is right for your needs.
+
+OpenJDK RPMs for RHEL 7::
+RPM distributions of OpenJDK 7, 8, and 11 for RHEL 7.
+The OpenJDK 7 and 8 distributions can also be installed as a JRE.
++
+All of these distributions provide Java Web Start.
++
+The OpenJDK 11 distribution also includes Flight Recorder for support of Mission Control.
+OpenJDK RPMs for RHEL 8::
+RPM distributions of OpenJDK 8 and 11 for RHEL 8.
+The OpenJDK 8 distribution can also be installed as a JRE.
++
+All of these distributions provide Java Web Start.
++
+The OpenJDK 11 distribution also includes Flight Recorder for support of Mission Control.
+OpenJDK 8 JRE portable zip for RHEL::
+Portable OpenJDK 8 JRE zip distribution for RHEL 7 and 8 hosts.
+OpenJDK 8 portable zip for RHEL::
+Portable OpenJDK 8 zip distribution for RHEL 7 and 8 hosts.
+OpenJDK 11 portable zip for RHEL::
+Portable OpenJDK 11 zip distribution for RHEL 7 and 8 hosts.
+This distribution includes Flight Recorder for support of Mission Control.
+OpenJDK zips for Windows::
+OpenJDK 8 and 11 distributions for all supported Windows hosts.
+This distribution includes the following:
++
+* Java Web Start
+* Mission Control
+* Flight Recorder
+OpenJDK installers for Windows::
+OpenJDK 8 and 11 MSI installer for all supported Windows hosts.
+Optionally installs Java Web Start and sets environment variables.
+
+.Additional resources
+* JDK Mission Control is available for RHEL with link:https://access.redhat.com/documentation/en-us/red_hat_software_collections/3/html/3.2_release_notes/chap-RHSCL#tabl-RHSCL-Components[Red Hat Software Collections 3.2].

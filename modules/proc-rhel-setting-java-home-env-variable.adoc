@@ -1,0 +1,32 @@
+[id="rhel_set_java_home"]
+= Setting the JAVA_HOME environment variable on {rhel}
+
+Some applications will require you to set the `JAVA_HOME`
+environment variable in order for the application to find
+your Java installation.
+
+.Prerequisites
+. Have a JDK installed on your system at a known location. For example, at location `/opt/jdk/11`
+
+.Procedure
+. Set the `JAVA_HOME` environment variable in bash
++
+----
+$ export JAVA_HOME=/opt/jdk/11
+----
++
+. Verify `JAVA_HOME` is set correctly:
++
+----
+$ printenv | grep JAVA_HOME
+JAVA_HOME=/opt/jdk/11
+----
++
+
+[Note]
+====
+Persisting the `JAVA_HOME` variable for the current user can be achieved by exporting the enviroment variable
+in `~/.bashrc`.
+====
+
+
