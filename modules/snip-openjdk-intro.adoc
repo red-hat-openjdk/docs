@@ -1,0 +1,6 @@
+{prod} (Open Java Development Kit) is a free and open-source implementation of the Java Platform, Standard Edition (Java SE).
+
+{comp} provides a distribution of {prod} that follows the {rhel} distribution of {prod} as closely as possible on the {msw} platform.
+Windows builds use {rhel} RPM sources and apply all of the relevant RPM patches.
+
+{comp} includes {prod}, fonts, timezone data, and CA certificates from {rhel}.

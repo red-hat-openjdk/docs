@@ -1,7 +1,0 @@
-include::common/attributes.adoc[]
-
-:context: windows
-
-= Using {prod-long-name}
-
-include::assemblies/assembly-getting-started.adoc[leveloffset=+1]

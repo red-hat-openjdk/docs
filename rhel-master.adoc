@@ -1,5 +1,0 @@
-include::common/attributes.adoc[]
-
-:context: rhel
-
-= Using {prod-long-name}

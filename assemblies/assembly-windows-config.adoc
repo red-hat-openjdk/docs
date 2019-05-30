@@ -1,0 +1,6 @@
+[id="configuring-openjdk-{context}"]
+= Configuring {prod} for Windows
+
+include::../modules/proc-windows-select-specific-jdk-perapplication.adoc[leveloffset=+1]
+
+include::../modules/proc-windows-setup-jdkmissioncontrol.adoc[leveloffset=+1]

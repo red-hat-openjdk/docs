@@ -1,15 +1,8 @@
-[id="getting_started_with_openjdk_for_windows"]
+[id="getting_started_with_openjdk"]
 = Getting Started with {comp}
 
-{prod} (Open Java Development Kit) is a free and open-source implementation of the Java Platform, Standard Edition (Java SE).
-
-{comp} provides a distribution of {prod} that follows the {rhel} distribution of {prod} as closely as possible on the {msw} platform.
-Windows builds use {rhel} RPM sources and apply all of the relevant RPM patches.
-
-{comp} includes {prod}, fonts, timezone data, and CA certificates from {rhel}.
+include::../modules/snip-openjdk-intro.adoc[]
 
 include::../modules/ref-installation-options.adoc[leveloffset=+1]
 
-include::../modules/proc-windows-installing-openjdk-zip.adoc[leveloffset=+1]
-
-include::../modules/proc-windows-installing-openjdk-msi.adoc[leveloffset=+1]
+include::../modules/con-distribution-selection.adoc[leveloffset=+1]

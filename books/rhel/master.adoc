@@ -1,0 +1,16 @@
+include::common/attributes.adoc[]
+
+:context: rhel
+
+= Using {prod-long-name} on RHEL
+
+include::modules/snip-openjdk-intro.adoc[]
+
+include::assemblies/assembly-rhel-installation.adoc[leveloffset=+1]
+
+include::assemblies/assembly-rhel-update.adoc[leveloffset=+1]
+
+include::assemblies/assembly-rhel-config.adoc[leveloffset=+1]
+
+//revision info
+include::common/revision-info.adoc[]

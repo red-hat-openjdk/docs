@@ -1,0 +1,10 @@
+include::common/attributes.adoc[]
+
+:context: jdk
+
+= Getting started with {prod}
+
+include::../../assemblies/assembly-getting-started.adoc[leveloffset=+1]
+
+//revision info
+include::common/revision-info.adoc[]

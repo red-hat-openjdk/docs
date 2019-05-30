@@ -1,0 +1,14 @@
+include::common/attributes.adoc[]
+
+:context: windows
+
+= Using {prod-long-name} on Windows
+
+include::modules/snip-openjdk-intro.adoc[]
+
+include::assemblies/assembly-windows-installation.adoc[leveloffset=+1]
+
+include::assemblies/assembly-windows-config.adoc[leveloffset=+1]
+
+//revision info
+include::common/revision-info.adoc[]

@@ -1,0 +1,6 @@
+[id="installing-openjdk-{context}"]
+= Installing {prod} on Windows
+
+include::../modules/proc-windows-installing-openjdk-zip.adoc[leveloffset=+1]
+
+include::../modules/proc-windows-installing-openjdk-msi.adoc[leveloffset=+1]
