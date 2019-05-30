@@ -1,0 +1,18 @@
+[id="rhel_select_jdk"]
+= Selecting a specific JDK on {rhel} installed using {archive} bundles
+
+If you have multiple JDKs installed on {rhel} you can select a
+specific JDK using the procedure below.
+
+.Prerequisites
+. Have multiple JDKs installed in a known location on your {rhel} system
+
+.Procedure
+. Find the path to the JDK you want to select, for example `/opt/jdk/jdk-11.0.3`
+. Set the xref:proc-rhel-setting-java-home-env-variable.adoc[`JAVA_HOME` variable] and add `$JAVA_HOME/bin` to the `PATH` variable
++
+----
+$ export JAVA_HOME=/opt/jdk/jdk-11.0.3
+$ export PATH="$PATH:$JAVA_HOME/bin"
+----
++
