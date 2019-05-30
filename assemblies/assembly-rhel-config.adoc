@@ -12,3 +12,5 @@ include::../modules/proc-rhel-selecting-jdk-perapplication.adoc[leveloffset=+1]
 include::../modules/proc-rhel-selecting-jdk-zip.adoc[leveloffset=+1]
 
 include::../modules/proc-rhel-setting-java-home-env-variable.adoc[leveloffset=+1]
+
+include::../modules/proc-rhel-config-openjdk-heap.adoc[leveloffset=+1]
