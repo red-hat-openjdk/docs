@@ -1,8 +1,10 @@
 [id="rhel_installing_openjdk_jre_archive"]
-= Installing the JDK with the archive bundle on {rhel}
+= Installing the JRE with the archive bundle on {rhel}
 
 The Java Runtime Environment (JRE) can be manually installed using the {archive} bundle.
-This is useful if the Java administrator does not have root privileges on the system.
+This is useful if the Java administrator does not have root privileges on the system. Note that
+it's recommended to create a parent directory containing your JREs and create a symlink to the
+latest JRE via a generic path. This eases upgrades to later versions.
 
 .Procedure
 . link:{openjdk-rhel-archive-download-url}[Download the JRE {archive} bundle] of {comp}.
@@ -10,14 +12,22 @@ This is useful if the Java administrator does not have root privileges on the sy
 +
 [source,subs="+quotes"]
 ----
+$ mkdir ~/jres && cd ~/jres
 $ tar -xf _`<tar-file>`_
 ----
 +
-. Add the `bin` directory contained in your {comp} installation path to the `PATH` environment variable:
+. Create a generic path by using symlinks to your JRE for easier upgrades
 +
 [source,subs="+quotes"]
 ----
-$ export PATH="/home/openjdk/_`<your-directory>`_/bin"
+$ ln -s ~/jres/_`<your-directory>`_ ~/jres/_`<major-version>`_
+----
++
+. Add the `bin` directory of the generic JRE path to the `PATH` environment variable:
++
+[source,subs="+quotes"]
+----
+$ export PATH="$PATH:$(echo ~)/jres/_`<major-version>`_/bin"
 ----
 +
 . Verify that `java -version` works without supplying the full path:
@@ -36,4 +46,4 @@ OpenJDK 64-Bit Server VM (build 25.181.-b13, mixed mode)
 The `JAVA_HOME` environment variable must also be set to use some developer tools.
 Set the `JAVA_HOME` environment variable as follows:
 
-include::modules/proc-rhel-setting-java-home-env-variable.adoc[]
+include::proc-rhel-setting-java-home-env-variable.adoc[]

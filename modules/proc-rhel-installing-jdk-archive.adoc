@@ -3,25 +3,36 @@
 
 The Java Development Kit (JDK) can be manually installed using the {archive} bundle.
 This is useful if the Java administrator does not have root privileges on the system.
+Note that it's recommended to create a parent directory containing your JDKs and
+create a symlink to the latest JDK via a generic path. This eases upgrades to
+later versions.
+
 
 .Procedure
 . link:{openjdk-rhel-archive-download-url}[Download the JDK {archive} bundle] of {comp}.
 . Extract the contents of the {archive} bundle to a directory of your choice.
 +
 ----
+$ mdkir ~/jdks && cd ~/jdks
 $ tar -xf java-11-openjdk-11.0.3.7-0.tar.xz
 ----
 +
-. Add the `bin` directory contained in your {comp} installation path to the `PATH` environment variable:
+. Create a generic path by using symlinks to your JDK for easier upgrades
 +
 ----
-$ export PATH="/home/openjdk/java-11-openjdk-11.0.3.7-0.el6.static.jdk.openjdkportable.x86_64/bin"
+$ ln -s ~/jdks/java-11-openjdk-11.0.3.7-0.el6.static.jdk.openjdkportable.x86_64 ~/jdks/java-11
+----
++
+. Add the `bin` directory of the generic JDK path to the `PATH` environment variable:
++
+----
+$ export PATH="$PATH:$(echo ~)/jdks/java-11"
 ----
 +
 . Verify that `javac -version` works without supplying the full path:
 +
 ----
-$ java -version
+$ javac -version
 javac 11.0.3
 ----
 +
