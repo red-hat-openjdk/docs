@@ -3,4 +3,4 @@
 
 include::../modules/proc-rhel-updating-openjdk-rpm.adoc[leveloffset=+1]
 
-include::../modules/proc-rhel-updating-openjdk-zip.adoc[leveloffset=+1]
+include::../modules/proc-rhel-updating-openjdk-archive.adoc[leveloffset=+1]
