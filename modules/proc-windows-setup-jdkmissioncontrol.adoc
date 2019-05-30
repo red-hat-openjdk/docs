@@ -1,0 +1,25 @@
+[id='setup-_JDKMissionControl_procedure_windows']
+= Setting up JDK Mission Control for Windows
+
+This procedure describes how to install and set up JDK Mission Control for {msw}.
+
+.Prerequisites
+
+* Installation of OpenJDK 11 for {msw}.
+
+.Procedure
+
+. Unarchive the zip 
+. In the `missioncontrol` directory, open the JMC client executable file.
++
+image::images/win_missioncontrol.png[{ProductName} entities]
+
+. On the command line, start the JMC Client by entering `jmc` or the the full path to the JMC executable.
++
+----
+JAVA_HOME\missioncontrol\jmc.exe
+----
+
+. On the JMC Client screen, create a new connection from the File Menu, choose your JVM, and start JMX console.
+
+. The result should give you an overview page with Processors, Memory consumption, Java heap use, JVM CPU usage, etc.
