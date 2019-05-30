@@ -2,6 +2,11 @@
 = Updating {prod} for RHEL using the zip bundle
 
 {comp} can be manually installed using the zip bundle.
+This is useful if the Java administrator does not have root privileges on the system.
+
+Note that it's recommended to create a parent directory containing your JDKs and
+create a symlink to the latest JDK via a generic path. This eases upgrades to
+later versions.
 
 .Procedure
 . link:{openjdk-rhel-archive-download-url}[Download the {archive} bundle] of {comp}.
@@ -14,7 +19,16 @@ Extracting the contents of the zip bundle to a directory path that *does not* co
 +
 [source,subs="+quotes"]
 ----
+$ cd ~/jdks
 $ tar -xf _`<new-tag.gz-file>`_
+----
++
+
+. Update the generic path by using symlinks to your new JDK.
++
+[source,subs="+quotes"]
+----
+$ ln -sfn ~/jdks/java-11-openjdk-11.0.3.7-0.el6.static.jdk.openjdkportable.x86_64 ~/jdks/java-11
 ----
 +
 
@@ -22,7 +36,7 @@ $ tar -xf _`<new-tag.gz-file>`_
 +
 [source,subs="+quotes"]
 ----
-$ export PATH="/home/openjdk/_`<jdk-version>`_bin"
+$ export PATH="/home/jdks/_`<jdk-version>`_bin"
 ----
 +
 
