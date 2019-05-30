@@ -3,7 +3,7 @@
 To manage different major and minor JDK versions two things must be done.
 
 . Ensure that each major and minor JDK version is installed into its own unique directory.
-. Ensure that your PATH and JAVA_HOME and any other environment variables point to the same version.
+. Using the JAVA_HOME environment variable to set the PATH dynamically, you need to only update JAVA_HOME
 +
 If different versions are used odd errors can occur.
 
