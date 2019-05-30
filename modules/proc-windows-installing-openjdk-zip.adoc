@@ -27,6 +27,21 @@ The above command only works if you start the command prompt with `Run as admini
 You have to restart the command prompt to check the setting by typing `path`.
 ====
 [start=4]
+. Verify the {comp} is installed by running: `java -version` in a newly opened Command Prompt and you should see the following:
++
+----
+java version "1.8.0_181"
+Java(TM) SE Runtime Environment (build 1.8.0_181-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 25.181-b13, mixed mode)
+or
+openjdk version "1.8.0_212-2-redhat"
+OpenJDK Runtime Environment (build 1.8.0_212-2-redhat-b04)
+OpenJDK 64-Bit Server VM (build 25.212-b04, mixed mode)
+or
+openjdk version "11.0.3-redhat" 2019-04-16 LTS
+OpenJDK Runtime Environment 18.9 (build 11.0.3-redhat+7-LTS)
+OpenJDK 64-Bit Server VM 18.9 (build 11.0.3-redhat+7-LTS, mixed mode)
+----
 . The `%JAVA_HOME%` environment variable must also be set to use some developer tools.
 
 Set the `%JAVA_HOME%` environment variable as
