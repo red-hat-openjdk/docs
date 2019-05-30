@@ -1,0 +1,10 @@
+[NOTE]
+====
+To manage different major and minor JDK versions two things must be done.
+
+. Ensure that each major and minor JDK version is installed into its own unique directory.
+. Ensure that your PATH and JAVA_HOME and any other environment variables point to the same version.
++
+If different versions are used odd errors can occur.
+
+====
