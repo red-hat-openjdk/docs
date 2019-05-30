@@ -1,0 +1,32 @@
+// Module included in the following assemblies:
+//
+// <List assemblies here, each on a new line>
+
+// Base the file name and the ID on the module title. For example:
+// * file name: doing-procedure-a.adoc
+// * ID: [id='doing-procedure-a']
+// * Title: = Doing procedure A
+
+// The ID is used as an anchor for linking to the module. Avoid changing it after the module has been published to ensure existing links are not broken.
+[id='setup-_JDKMissionControl_procedure_windows{context}']
+// The `context` attribute enables module reuse. Every module's ID includes {context}, which ensures that the module has a unique ID even if it is reused multiple times in a guide.
+= Set up JDK Mission Control with Red Hat build of OpneJDK for Windows
+// Start the title of a procedure module with a verb, such as Creating or Create. See also _Wording of headings_ in _The IBM Style Guide_.
+
+This procedure describes how to install and set up JDK Mission Control for {msw}.
+
+.Prerequisites
+
+* OpenJDK 11 installation via OpenJDK11 zip for {msw}.
+
+.Procedure
+
+. Unarchive the downloaded zip and JMC client executable file can be found in the missioncontrol directory.
+image::images/win_missioncontrol.png[{ProductName} entities]
+
+. On the command-line prompt, start the JMC client by entering jmc or the the full path to the JMC executable.
+    JAVA_HOME\missioncontrol\jmc.exe
+
+. On the JMC Client screen, create a new connection from the File Menu, choose your JVM, and start JMX console.
+
+. The result should give you an overview page with Processors, Memory consumption, Java heap use, JVM CPU usage, etc.
