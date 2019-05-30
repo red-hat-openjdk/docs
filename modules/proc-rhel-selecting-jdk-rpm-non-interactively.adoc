@@ -1,0 +1,39 @@
+[id="rhel_select_jdk_rpm_non_interactive"]
+= Selecting a specific JDK on {rhel} non-interactively
+
+If you have multiple JDKs installed using the `yum` package manager on {rhel} you can
+non-interactively select a specific JDK, system wide, using the following procedure. This is useful
+for administrators who have root privileges on a {rhel} system and need to switch the default Java on
+many systems in an automated way.
+
+.Prerequisites
+
+. root privileges on the system.
+. xref:proc-rhel-installing-multiple-major-versions.adoc[Have multiple JDKs installed] on your system using the `yum` package manager.
+. Know the desired Java major version which should get selected system wide ahead of time.
+
+.Procedure
+. Set the `PKG_NAME` variable to the Java version you'd like to switch to. In our example, that's `java-11-openjdk` for Java 11.
+  Then switch to the Java selection using the `alternatives --set` command.
++
+----
+# PKG_NAME=java-11-openjdk
+# JAVA_TO_SELECT=$(alternatives --display java | grep "family $PKG_NAME" | cut -d' ' -f1)
+# alternatives --set java $JAVA_TO_SELECT
+----
++
+. Verify the selected Java is the desired version
++
+----
+# java -version
+openjdk version "11.0.3" 2019-04-16 LTS
+OpenJDK Runtime Environment 18.9 (build 11.0.3+7-LTS)
+OpenJDK 64-Bit Server VM 18.9 (build 11.0.3+7-LTS, mixed mode, sharing)
+----
++
+
+
+[Note]
+====
+If you wanted to switch to Java 8, set `PKG_NAME=java-1.8.0-openjdk`, instead.
+====
