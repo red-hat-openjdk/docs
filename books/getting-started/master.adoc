@@ -4,7 +4,7 @@ include::common/attributes.adoc[]
 
 = Getting started with {prod}
 
-include::../../assemblies/assembly-getting-started.adoc[leveloffset=+1]
+include::assemblies/assembly-getting-started.adoc[leveloffset=+1]
 
 //revision info
 include::common/revision-info.adoc[]
