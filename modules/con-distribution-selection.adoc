@@ -1,4 +1,4 @@
-[id="selecting-right-distribution']
+[id="distribution-selection"]
 = Distribution selection
 
 Red Hat provides several distributions of OpenJDK.
