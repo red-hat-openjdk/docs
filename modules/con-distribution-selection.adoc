@@ -26,7 +26,7 @@ OpenJDK 11 portable zip for RHEL::
 Portable OpenJDK 11 zip distribution for RHEL 7 and 8 hosts.
 This distribution includes Flight Recorder for support of Mission Control.
 OpenJDK zips for Windows::
-OpenJDK 8 and 11 distributions for all supported Windows hosts.
+OpenJDK 8 and 11 distributions for all supported Windows hosts. Recommended for cases where multiple OpenJDK versions may be installed on a host.
 This distribution includes the following:
 +
 * Java Web Start
@@ -35,6 +35,7 @@ This distribution includes the following:
 OpenJDK installers for Windows::
 OpenJDK 8 and 11 MSI installer for all supported Windows hosts.
 Optionally installs Java Web Start and sets environment variables.
+Suitable for system wide installs of a single OpenJDK version.
 
 .Additional resources
 * JDK Mission Control is available for RHEL with link:https://access.redhat.com/documentation/en-us/red_hat_software_collections/3/html/3.2_release_notes/chap-RHSCL#tabl-RHSCL-Components[Red Hat Software Collections 3.2].
