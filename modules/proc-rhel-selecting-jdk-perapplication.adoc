@@ -9,7 +9,7 @@ script.
 
 .Prerequisites
 . xref:proc-rhel-installing-multiple-major-versions.adoc[Have multiple JDKs installed] on your system using the `yum` package manager.
-  It's recommended to install the full JDKs for this purpose. This can be done by installing `-devel` sub-packages.
+  It is recommended to install the full JDKs for this purpose. This can be done by installing `-devel` sub-packages.
 +
 ----
 $ rpm --qf '%{NAME}\n' -qf $(readlink -f /usr/lib/jvm/java-1.8.0-openjdk/bin)
