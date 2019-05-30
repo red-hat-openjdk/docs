@@ -9,10 +9,10 @@
 +
 [NOTE]
 ====
-Extracting the contents of the zip bundle to a directory path that *does not* contain spaces is recommended.
+Extracting the contents of the zip bundle to a directory path that _does not_ contain spaces is recommended.
 ====
 
-. On the Command prompt, update `JAVA_HOME` environment variable as follows:
+. On the command prompt, update `JAVA_HOME` environment variable as follows:
 
 include::../modules/snip-windows-add-java-home-env-variable.adoc[]
 
@@ -22,7 +22,7 @@ include::../modules/snip-windows-add-java-home-env-variable.adoc[]
 C:\> setx -m PATH "%PATH%;%JAVA_HOME%\bin";
 ----
 
-. Restart Command Prompt to reload the environment variables.
+. Restart the command prompt to reload the environment variables.
 
 . Verify that `java -version` works without supplying the full path.
 +
