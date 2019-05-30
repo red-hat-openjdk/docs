@@ -7,10 +7,10 @@
 * A user with root privileges.
 
 .Procedure
-. Run the relevant `yum` command for installing the package. For example: `java-1.8.0-openjdk-headless` for JDK 8
+. Run the relevant `yum` command for installing the package. For example: `java-1.8.0-openjdk` for JDK 8
 +
 ----
-# yum install java-8-openjdk-headless
+# yum install java-8-openjdk
 ----
 +
 . Verify that `java -version` works

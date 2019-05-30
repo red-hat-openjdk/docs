@@ -1,27 +1,63 @@
-[id="installing_openjdk_zip_bundle"]
-= Installing {prod} with the ZIP Bundle
+[id="proc-windows-installing_openjdk_zip"]
+= Installing {prod} using the zip bundle
 
-{comp} can be manually installed using the ZIP bundle.
+The easiest way to install the JDK on Windows is to unarchive the zip via the command prompt.
+
+[NOTE]
+====
+Extracting the contents of the zip bundle to a directory path that _does not_ contain spaces is recommended.
+
+This is important as many scripts that reference the `JAVA_HOME` environment variable may not extract the path correctly if their is a space present.
+====
+
 
 .Procedure
-. link:{openjdk-download-url}[Download the ZIP bundle] of {comp}.
-. Extract the contents of the ZIP bundle to a directory of your choice.
+. link:{openjdk-download-url}[Download the zip bundle] of {comp}.
+. Extract the contents of the zip bundle to a directory of your choice.  See the note and caution above about spaces in the install path.
+. Update the `PATH` as below:
++
+----
+C:\> setx /m PATH "%PATH%;${YOUR_INSTALL_PATH}\bin"
+----
 +
 [NOTE]
 ====
-Extracting the contents of the ZIP bundle to a directory path that *does not* contain spaces is recommended.
+The above command only works if you start the command prompt with `Run as administrator`.
+
+/m updates the value as a system wide setting, instead of the default local environment.
+
+You have to restart the command prompt to check the setting by typing `path`.
 ====
-. Add the `bin` directory contained in your {comp} installation path to the `%PATH%` environment variable:
+
+. Verify the {comp} is installed by running: `java -version` in a newly opened command prompt and you should see the following:
 +
 ----
-C:\> setx /m PATH "%PATH%;C:\Progra~1\RedHat\java-11-openjdk-11.0.1.13-1\bin"
+java version "1.8.0_181"
+Java(TM) SE Runtime Environment (build 1.8.0_181-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 25.181-b13, mixed mode)
+or
+openjdk version "1.8.0_212-2-redhat"
+OpenJDK Runtime Environment (build 1.8.0_212-2-redhat-b04)
+OpenJDK 64-Bit Server VM (build 25.212-b04, mixed mode)
+or
+openjdk version "11.0.3-redhat" 2019-04-16 LTS
+OpenJDK Runtime Environment 18.9 (build 11.0.3-redhat+7-LTS)
+OpenJDK 64-Bit Server VM 18.9 (build 11.0.3-redhat+7-LTS, mixed mode)
+----
+
+. The `%JAVA_HOME%` environment variable must also be set to use some developer tools.
++
+Set the `%JAVA_HOME%` environment variable as
++
+----
+C:\> setx /m JAVA_HOME "${YOUR_INSTALL_PATH}"
 ----
 +
-If the path contains spaces, use the shortened path name.
+[NOTE]
+====
+`JAVA_HOME` will _not_ work if the bin directory is appended to ${YOUR_INSTALL_PATH}.
 
-. Restart Command Prompt to reload the environment variables.
-
-The `%JAVA_HOME%` environment variable must also be set to use some developer tools.
-Set the `%JAVA_HOME%` environment variable as follows:
+After restarting the command prompt, you can view your setting by typing `echo %JAVA_HOME%`.
+====
 
 include::../modules/snip-windows-add-java-home-env-variable.adoc[]
