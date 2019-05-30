@@ -1,0 +1,19 @@
+[id="config_openjdk_heap"]
+= Configuring OpenJDK to run with customized heap size
+
+{comp} can be configured to use a customized heap size.
+
+.Prequisites
+. Installed Java Runtime
+
+.Procedure
+. Run the application by adding maximum heap size option to your java command line. For example to set the maximum heap size to 100 megabytes use the `-Xmx100m` option.
++
+----
+$ java -Xmx100m `_<your-main-class>_`
+----
+
+[Note]
+====
+For reference see https://docs.oracle.com/javase/8/docs/technotes/tools/unix/java.html#BABDJJFI
+====
