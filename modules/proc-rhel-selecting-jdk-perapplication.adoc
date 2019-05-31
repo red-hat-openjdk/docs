@@ -8,7 +8,7 @@ script.
 
 
 .Prerequisites
-. xref:proc-rhel-installing-multiple-major-versions.adoc[Have multiple JDKs installed] on your system using the `yum` package manager.
+* xref:proc-rhel-installing-multiple-major-versions.adoc[Have multiple JDKs installed] on your system using the `yum` package manager.
   It is recommended to install the full JDKs for this purpose. This can be done by installing `-devel` sub-packages.
 +
 ----
