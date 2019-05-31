@@ -425,9 +425,32 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 .show-for-print{display:inherit!important}}
 </style>
 </head>
-<body class="article">
+<body class="article toc2 toc-left">
 <div id="header">
 <h1>Using Red&#160;Hat OpenJDK 11 on Windows</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#installing-openjdk-windows">1. Installing OpenJDK on Windows</a>
+<ul class="sectlevel2">
+<li><a href="#proc-windows-installing_openjdk_zip">1.1. Installing OpenJDK using the zip bundle</a></li>
+<li><a href="#proc_windows_installing_openjdk_msi">1.2. Installing OpenJDK with the MSI Installer</a></li>
+</ul>
+</li>
+<li><a href="#updating-openjdk-windows">2. Updating OpenJDK on Windows</a>
+<ul class="sectlevel2">
+<li><a href="#win_updating_openjdk_zip_bundle">2.1. Updating OpenJDK for Microsoft Windows using the zip bundle</a></li>
+</ul>
+</li>
+<li><a href="#configuring-openjdk-windows">3. Configuring OpenJDK for Windows</a>
+<ul class="sectlevel2">
+<li><a href="#select-specific_JDK_procedure_perapplication">3.1. Selecting a specific JDK from the installed versions for an application</a></li>
+<li><a href="#setup-_JDKMissionControl_procedure_windows">3.2. Setting up JDK Mission Control for Windows</a></li>
+<li><a href="#config_openjdk_heap">3.3. Configuring OpenJDK to run with customized heap size</a></li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 <div id="content">
 <div id="preamble">
@@ -445,10 +468,10 @@ Windows builds use Red&#160;Hat Enterprise&#160;Linux RPM sources and apply all 
 </div>
 </div>
 <div class="sect1">
-<h2 id="installing-openjdk-windows">Installing OpenJDK on Windows</h2>
+<h2 id="installing-openjdk-windows"><a class="anchor" href="#installing-openjdk-windows"></a><a class="link" href="#installing-openjdk-windows">1. Installing OpenJDK on Windows</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="proc-windows-installing_openjdk_zip">Installing OpenJDK using the zip bundle</h3>
+<h3 id="proc-windows-installing_openjdk_zip"><a class="anchor" href="#proc-windows-installing_openjdk_zip"></a><a class="link" href="#proc-windows-installing_openjdk_zip">1.1. Installing OpenJDK using the zip bundle</a></h3>
 <div class="paragraph">
 <p>The easiest way to install the JDK on Windows is to unarchive the zip via the command prompt.</p>
 </div>
@@ -573,7 +596,7 @@ OpenJDK 64-Bit Server VM 18.9 (build 11.0.3-redhat+7-LTS, mixed mode)</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="proc_windows_installing_openjdk_msi">Installing OpenJDK with the MSI Installer</h3>
+<h3 id="proc_windows_installing_openjdk_msi"><a class="anchor" href="#proc_windows_installing_openjdk_msi"></a><a class="link" href="#proc_windows_installing_openjdk_msi">1.2. Installing OpenJDK with the MSI Installer</a></h3>
 <div class="paragraph">
 <p>The simplest way to install OpenJDK on Microsoft Windows.</p>
 </div>
@@ -734,10 +757,10 @@ HKLM\Software\JavaSoft\JDK\&lt;version&gt;, entries:
 </div>
 </div>
 <div class="sect1">
-<h2 id="updating-openjdk-windows">Updating OpenJDK on Windows</h2>
+<h2 id="updating-openjdk-windows"><a class="anchor" href="#updating-openjdk-windows"></a><a class="link" href="#updating-openjdk-windows">2. Updating OpenJDK on Windows</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="win_updating_openjdk_zip_bundle">Updating OpenJDK for Microsoft Windows using the zip bundle</h3>
+<h3 id="win_updating_openjdk_zip_bundle"><a class="anchor" href="#win_updating_openjdk_zip_bundle"></a><a class="link" href="#win_updating_openjdk_zip_bundle">2.1. Updating OpenJDK for Microsoft Windows using the zip bundle</a></h3>
 <div class="paragraph">
 <p>OpenJDK 11 for Windows can be manually update using the zip bundle.</p>
 </div>
@@ -812,10 +835,10 @@ OpenJDK 64-bit Server VM (build 11.0.3+7-LTS, mixed mode)</pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="configuring-openjdk-windows">Configuring OpenJDK for Windows</h2>
+<h2 id="configuring-openjdk-windows"><a class="anchor" href="#configuring-openjdk-windows"></a><a class="link" href="#configuring-openjdk-windows">3. Configuring OpenJDK for Windows</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="select-specific_JDK_procedure_perapplication">Selecting a specific JDK from the installed versions for an application</h3>
+<h3 id="select-specific_JDK_procedure_perapplication"><a class="anchor" href="#select-specific_JDK_procedure_perapplication"></a><a class="link" href="#select-specific_JDK_procedure_perapplication">3.1. Selecting a specific JDK from the installed versions for an application</a></h3>
 <div class="paragraph">
 <p>You can select a specific JDK from the installed versions on Microsoft Windows for an application.</p>
 </div>
@@ -873,7 +896,7 @@ OpenJDK 64-bit Server VM (build 11.0.3+7-LTS, mixed mode)</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="setup-_JDKMissionControl_procedure_windows">Setting up JDK Mission Control for Windows</h3>
+<h3 id="setup-_JDKMissionControl_procedure_windows"><a class="anchor" href="#setup-_JDKMissionControl_procedure_windows"></a><a class="link" href="#setup-_JDKMissionControl_procedure_windows">3.2. Setting up JDK Mission Control for Windows</a></h3>
 <div class="paragraph">
 <p>This procedure describes how to install and set up JDK Mission Control for Microsoft Windows.</p>
 </div>
@@ -917,7 +940,7 @@ OpenJDK 64-bit Server VM (build 11.0.3+7-LTS, mixed mode)</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="config_openjdk_heap">Configuring OpenJDK to run with customized heap size</h3>
+<h3 id="config_openjdk_heap"><a class="anchor" href="#config_openjdk_heap"></a><a class="link" href="#config_openjdk_heap">3.3. Configuring OpenJDK to run with customized heap size</a></h3>
 <div class="paragraph">
 <p>OpenJDK 11 for Windows can be configured to use a customized heap size.</p>
 </div>
@@ -951,7 +974,7 @@ OpenJDK 64-bit Server VM (build 11.0.3+7-LTS, mixed mode)</pre>
 </ul>
 </div>
 <div class="paragraph">
-<p><em>Revised on 2019-05-31 12:15:22 EDT</em></p>
+<p><em>Revised on 2019-05-31 12:25:27 EDT</em></p>
 </div>
 </div>
 </div>
