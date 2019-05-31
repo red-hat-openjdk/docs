@@ -1,8 +1,0 @@
-[id="getting_started_with_openjdk"]
-= Getting Started with {comp}
-
-include::../modules/snip-openjdk-intro.adoc[]
-
-include::../modules/ref-installation-options.adoc[leveloffset=+1]
-
-include::../modules/con-distribution-selection.adoc[leveloffset=+1]
