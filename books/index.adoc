@@ -1,0 +1,5 @@
+= Red Hat OpenJDK Documentation
+
+* link:getting-started/index.html[Getting started with OpenJDK]
+* link:rhel/index.html[Using Red Hat OpenJDK on RHEL]
+* link:windows/index.html[Using Red Hat OpenJDK on Windows]
