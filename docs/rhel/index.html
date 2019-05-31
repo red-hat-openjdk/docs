@@ -425,9 +425,43 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 .show-for-print{display:inherit!important}}
 </style>
 </head>
-<body class="article">
+<body class="article toc2 toc-left">
 <div id="header">
 <h1>Using Red&#160;Hat OpenJDK 11 on RHEL</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#installing-openjdk-rhel">1. Installing OpenJDK on RHEL</a>
+<ul class="sectlevel2">
+<li><a href="#rhel_installing_openjdk_rpm">1.1. Installing the Java Development Kit via yum on Red&#160;Hat Enterprise&#160;Linux</a></li>
+<li><a href="#rhel_set_java_home">1.2. Setting the JAVA_HOME environment variable on Red&#160;Hat Enterprise&#160;Linux</a>
+<ul class="sectlevel3">
+<li><a href="#rhel_installing_openjdk_jre_rpm">1.2.1. Installing the Java Runtime Environment via yum on Red&#160;Hat Enterprise&#160;Linux</a></li>
+<li><a href="#rhel_set_java_home">1.2.2. Setting the JAVA_HOME environment variable on Red&#160;Hat Enterprise&#160;Linux</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#updating-openjdk-rhel">2. Updating OpenJDK on RHEL</a>
+<ul class="sectlevel2">
+<li><a href="#rhel_updating_openjdk_rpm">2.1. Updating OpenJDK using yum on Red&#160;Hat Enterprise&#160;Linux</a></li>
+<li><a href="#rhel_updating_openjdk_zip_bundle">2.2. Updating OpenJDK for RHEL using an archive</a></li>
+</ul>
+</li>
+<li><a href="#configuring-openjdk-rhel">3. Configuring OpenJDK for RHEL</a>
+<ul class="sectlevel2">
+<li><a href="#rhel_select_jdk_rpm">3.1. Selecting a specific JDK on Red&#160;Hat Enterprise&#160;Linux installed with RPMs</a></li>
+<li><a href="#rhel_select_jdk_rpm_non_interactive">3.2. Selecting a specific JDK on Red&#160;Hat Enterprise&#160;Linux non-interactively</a></li>
+<li><a href="#rhel_select_jdk_rpm_non_interactive">3.3. Selecting a specific JDK on Red&#160;Hat Enterprise&#160;Linux non-interactively</a></li>
+<li><a href="#rhel_select_jdk_per_application">3.4. Selecting a specific JDK on Red&#160;Hat Enterprise&#160;Linux per application</a>
+<ul class="sectlevel3">
+<li><a href="#config_openjdk_heap">3.4.1. Configuring OpenJDK to run with customized heap size</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 <div id="content">
 <div id="preamble">
@@ -445,10 +479,10 @@ Windows builds use Red&#160;Hat Enterprise&#160;Linux RPM sources and apply all 
 </div>
 </div>
 <div class="sect1">
-<h2 id="installing-openjdk-rhel">Installing OpenJDK on RHEL</h2>
+<h2 id="installing-openjdk-rhel"><a class="anchor" href="#installing-openjdk-rhel"></a><a class="link" href="#installing-openjdk-rhel">1. Installing OpenJDK on RHEL</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="rhel_installing_openjdk_rpm">Installing the Java Development Kit via yum on Red&#160;Hat Enterprise&#160;Linux</h3>
+<h3 id="rhel_installing_openjdk_rpm"><a class="anchor" href="#rhel_installing_openjdk_rpm"></a><a class="link" href="#rhel_installing_openjdk_rpm">1.1. Installing the Java Development Kit via yum on Red&#160;Hat Enterprise&#160;Linux</a></h3>
 <div class="paragraph">
 <p>OpenJDK 11 for Windows can be installed using the system package manager <code>yum</code>. This will require root
 privileges.</p>
@@ -547,7 +581,7 @@ Set the <code>JAVA_HOME</code> environment variable as follows:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="rhel_set_java_home">Setting the JAVA_HOME environment variable on Red&#160;Hat Enterprise&#160;Linux</h3>
+<h3 id="rhel_set_java_home"><a class="anchor" href="#rhel_set_java_home"></a><a class="link" href="#rhel_set_java_home">1.2. Setting the JAVA_HOME environment variable on Red&#160;Hat Enterprise&#160;Linux</a></h3>
 <div class="paragraph">
 <p>Some applications will require you to set the <code>JAVA_HOME</code> environment variable in order for the application to find your Java installation.</p>
 </div>
@@ -597,7 +631,7 @@ in <code>~/.bashrc</code>.</p>
 </ol>
 </div>
 <div class="sect3">
-<h4 id="rhel_installing_openjdk_jre_rpm">Installing the Java Runtime Environment via yum on Red&#160;Hat Enterprise&#160;Linux</h4>
+<h4 id="rhel_installing_openjdk_jre_rpm"><a class="anchor" href="#rhel_installing_openjdk_jre_rpm"></a><a class="link" href="#rhel_installing_openjdk_jre_rpm">1.2.1. Installing the Java Runtime Environment via yum on Red&#160;Hat Enterprise&#160;Linux</a></h4>
 <div class="paragraph">
 <p>OpenJDK 11 for Windows can be installed using the system package manager <code>yum</code>.</p>
 </div>
@@ -695,7 +729,7 @@ Set the <code>JAVA_HOME</code> environment variable as follows:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="rhel_set_java_home">Setting the JAVA_HOME environment variable on Red&#160;Hat Enterprise&#160;Linux</h4>
+<h4 id="rhel_set_java_home"><a class="anchor" href="#rhel_set_java_home"></a><a class="link" href="#rhel_set_java_home">1.2.2. Setting the JAVA_HOME environment variable on Red&#160;Hat Enterprise&#160;Linux</a></h4>
 <div class="paragraph">
 <p>Some applications will require you to set the <code>JAVA_HOME</code> environment variable in order for the application to find your Java installation.</p>
 </div>
@@ -745,7 +779,7 @@ in <code>~/.bashrc</code>.</p>
 </ol>
 </div>
 <div class="sect4">
-<h5 id=""installing-multiple-major-versions-openjdk'">Installing multiple major versions of OpenJDK</h5>
+<h5 id=""installing-multiple-major-versions-openjdk'"><a class="anchor" href="#"installing-multiple-major-versions-openjdk'"></a><a class="link" href="#"installing-multiple-major-versions-openjdk'">Installing multiple major versions of OpenJDK</a></h5>
 <div class="paragraph">
 <p>If you are running multiple Java applications that require different Java versions you might need to install multiple major versions at the same time.</p>
 </div>
@@ -814,10 +848,10 @@ yum install java-11-openjdk --enablerepo=<em>&lt;rhel-rpms&gt;</em></code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="updating-openjdk-rhel">Updating OpenJDK on RHEL</h2>
+<h2 id="updating-openjdk-rhel"><a class="anchor" href="#updating-openjdk-rhel"></a><a class="link" href="#updating-openjdk-rhel">2. Updating OpenJDK on RHEL</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="rhel_updating_openjdk_rpm">Updating OpenJDK using yum on Red&#160;Hat Enterprise&#160;Linux</h3>
+<h3 id="rhel_updating_openjdk_rpm"><a class="anchor" href="#rhel_updating_openjdk_rpm"></a><a class="link" href="#rhel_updating_openjdk_rpm">2.1. Updating OpenJDK using yum on Red&#160;Hat Enterprise&#160;Linux</a></h3>
 <div class="paragraph">
 <p>The OpenJDK 11 for Windows RPM-based installer can be updated using the system package manager <code>yum</code>.</p>
 </div>
@@ -860,7 +894,7 @@ yum install java-11-openjdk --enablerepo=<em>&lt;rhel-rpms&gt;</em></code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="rhel_updating_openjdk_zip_bundle">Updating OpenJDK for RHEL using an archive</h3>
+<h3 id="rhel_updating_openjdk_zip_bundle"><a class="anchor" href="#rhel_updating_openjdk_zip_bundle"></a><a class="link" href="#rhel_updating_openjdk_zip_bundle">2.2. Updating OpenJDK for RHEL using an archive</a></h3>
 <div class="paragraph">
 <p>OpenJDK 11 for Windows can be manually installed using an archive.
 This is useful if the Java administrator does not have root privileges on the system.</p>
@@ -899,10 +933,10 @@ using instructions for <a href="#proc-rhel-installing-jdk-archive.adoc">JDK</a> 
 </div>
 </div>
 <div class="sect1">
-<h2 id="configuring-openjdk-rhel">Configuring OpenJDK for RHEL</h2>
+<h2 id="configuring-openjdk-rhel"><a class="anchor" href="#configuring-openjdk-rhel"></a><a class="link" href="#configuring-openjdk-rhel">3. Configuring OpenJDK for RHEL</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="rhel_select_jdk_rpm">Selecting a specific JDK on Red&#160;Hat Enterprise&#160;Linux installed with RPMs</h3>
+<h3 id="rhel_select_jdk_rpm"><a class="anchor" href="#rhel_select_jdk_rpm"></a><a class="link" href="#rhel_select_jdk_rpm">3.1. Selecting a specific JDK on Red&#160;Hat Enterprise&#160;Linux installed with RPMs</a></h3>
 <div class="paragraph">
 <p>If you have multiple JDKs installed on Red&#160;Hat Enterprise&#160;Linux you can select a
 specific JDK using the <code>alternatives</code> command. Selecting the JDK by using this
@@ -1000,7 +1034,7 @@ OpenJDK 64-Bit Server VM 18.9 (build 11.0.3+7-LTS, mixed mode, sharing)</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="rhel_select_jdk_rpm_non_interactive">Selecting a specific JDK on Red&#160;Hat Enterprise&#160;Linux non-interactively</h3>
+<h3 id="rhel_select_jdk_rpm_non_interactive"><a class="anchor" href="#rhel_select_jdk_rpm_non_interactive"></a><a class="link" href="#rhel_select_jdk_rpm_non_interactive">3.2. Selecting a specific JDK on Red&#160;Hat Enterprise&#160;Linux non-interactively</a></h3>
 <div class="paragraph">
 <p>If you have multiple JDKs installed using the <code>yum</code> package manager on Red&#160;Hat Enterprise&#160;Linux you can
 non-interactively select a specific JDK, system wide, using the following procedure. This is useful
@@ -1064,7 +1098,7 @@ OpenJDK 64-Bit Server VM 18.9 (build 11.0.3+7-LTS, mixed mode, sharing)</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="rhel_select_jdk_rpm_non_interactive">Selecting a specific JDK on Red&#160;Hat Enterprise&#160;Linux non-interactively</h3>
+<h3 id="rhel_select_jdk_rpm_non_interactive"><a class="anchor" href="#rhel_select_jdk_rpm_non_interactive"></a><a class="link" href="#rhel_select_jdk_rpm_non_interactive">3.3. Selecting a specific JDK on Red&#160;Hat Enterprise&#160;Linux non-interactively</a></h3>
 <div class="paragraph">
 <p>If you have multiple JDKs installed using the <code>yum</code> package manager on Red&#160;Hat Enterprise&#160;Linux you can
 non-interactively select a specific JDK, system wide, using the following procedure. This is useful
@@ -1128,7 +1162,7 @@ OpenJDK 64-Bit Server VM 18.9 (build 11.0.3+7-LTS, mixed mode, sharing)</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="rhel_select_jdk_per_application">Selecting a specific JDK on Red&#160;Hat Enterprise&#160;Linux per application</h3>
+<h3 id="rhel_select_jdk_per_application"><a class="anchor" href="#rhel_select_jdk_per_application"></a><a class="link" href="#rhel_select_jdk_per_application">3.4. Selecting a specific JDK on Red&#160;Hat Enterprise&#160;Linux per application</a></h3>
 <div class="paragraph">
 <p>Some applications will require a specific JDK version for it to run. If you
 have multiple JDKs installed on the system via the <code>yum</code> package manager, per
@@ -1266,7 +1300,7 @@ in <code>~/.bashrc</code>.</p>
 </ol>
 </div>
 <div class="sect3">
-<h4 id="config_openjdk_heap">Configuring OpenJDK to run with customized heap size</h4>
+<h4 id="config_openjdk_heap"><a class="anchor" href="#config_openjdk_heap"></a><a class="link" href="#config_openjdk_heap">3.4.1. Configuring OpenJDK to run with customized heap size</a></h4>
 <div class="paragraph">
 <p>OpenJDK 11 for Windows can be configured to use a customized heap size.</p>
 </div>
@@ -1300,7 +1334,7 @@ in <code>~/.bashrc</code>.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p><em>Revised on 2019-05-31 12:15:21 EDT</em></p>
+<p><em>Revised on 2019-05-31 12:25:27 EDT</em></p>
 </div>
 </div>
 </div>
