@@ -36,8 +36,8 @@
   them.
 * Terminate bulleted and numbered lists with periods unless the items
   listed are simple names.
-* The words "server" and "broker" are not capitalized unless they
-   begin a sentence or appear in a title.
+* The words "server" is not capitalized unless it
+   begins a sentence or appear in a title.
 * Avoid the word "simply" unless it clarifies.
 * For substitution of `{attr}` in code blocks, use `[subs=+attributes]`.
 * For styling of `++*bold*++` (`*bold*`) in code blocks, use
