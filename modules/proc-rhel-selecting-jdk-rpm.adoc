@@ -9,8 +9,8 @@ documentation if you need to select a JDK without root privileges or for
 per-application selection of a specific JDK.
 
 .Prerequisites
-. root privileges on the system.
-. xref:proc-rhel-installing-multiple-major-versions.adoc[Have multiple JDKs installed] on your system using the `yum` package manager.
+* root privileges on the system.
+* xref:proc-rhel-installing-multiple-major-versions.adoc[Have multiple JDKs installed] on your system using the `yum` package manager.
 
 .Procedure
 . See the automatically selected Java before switching to a different one
