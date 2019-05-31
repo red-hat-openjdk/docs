@@ -12,7 +12,7 @@ This procedure describes how to install and set up JDK Mission Control for {msw}
 . Unarchive the zip 
 . In the `missioncontrol` directory, open the JMC client executable file.
 +
-image::images/win_missioncontrol.png[{prod} entities]
+image::../images/win_missioncontrol.png[{prod} entities]
 
 . On the command line, start the JMC Client by entering `jmc` or the the full path to the JMC executable.
 +
