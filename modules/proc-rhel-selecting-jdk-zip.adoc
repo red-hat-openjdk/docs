@@ -5,7 +5,7 @@ If you have multiple JDKs installed on {rhel} you can select a
 specific JDK using the procedure below.
 
 .Prerequisites
-. Have multiple JDKs installed in a known location on your {rhel} system
+* Have multiple JDKs installed in a known location on your {rhel} system
 
 .Procedure
 . Find the path to the JDK you want to select, for example `/opt/jdk/jdk-11.0.3`
