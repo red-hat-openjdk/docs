@@ -8,7 +8,7 @@ include::modules/snip-openjdk-intro.adoc[]
 
 include::assemblies/assembly-windows-installation.adoc[leveloffset=+1]
 
-include::assemblies/assembly-window-update.adoc[leveloffset=+1]
+include::assemblies/assembly-windows-update.adoc[leveloffset=+1]
 
 include::assemblies/assembly-windows-config.adoc[leveloffset=+1]
 

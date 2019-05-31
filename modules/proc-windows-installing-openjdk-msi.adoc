@@ -1,10 +1,10 @@
 [id="proc_windows_installing_openjdk_msi"]
 = Installing {prod} with the MSI Installer
 
-The simplest way to install the {jdk} on windows.
+The simplest way to install {prod} on {msw}.
 
 .Procedure
-. link:{openjdk-download-url}[Download the MSI-based installer] for {comp}.
+. link:{openjdk-windows-installer-download-url}[Download the MSI-based installer] for {comp}.
 . Run the installer for {comp}.
 . Click `Next` on the Welcome Screen
 . Check `I accept the terms in the License Agreement`, then click `Next`

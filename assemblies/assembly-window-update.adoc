@@ -1,4 +1,0 @@
-[id="updating-openjdk-{context}"]
-= Updating {prod} on Windows
-
-include::../modules/proc-win-updating-openjdk-zip.adoc.adoc[leveloffset=+1]

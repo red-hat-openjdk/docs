@@ -12,7 +12,7 @@ This is important as many scripts that reference the `JAVA_HOME` environment var
 
 
 .Procedure
-. link:{openjdk-download-url}[Download the zip bundle] of {comp}.
+. link:{openjdk-windows-archive-download-url}[Download the zip bundle] of {comp}.
 . Extract the contents of the zip bundle to a directory of your choice.  See the note and caution above about spaces in the install path.
 . Update the `PATH` as below:
 +

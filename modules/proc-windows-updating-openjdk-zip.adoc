@@ -32,4 +32,3 @@ openjdk version "11.0.3" 2019-04-16 LTS
 OpenJDK Runtime Environment (build 11.0.3+7-LTS)
 OpenJDK 64-bit Server VM (build 11.0.3+7-LTS, mixed mode)
 ----
-+
