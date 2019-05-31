@@ -1,7 +1,7 @@
 [id="configuring-openjdk-{context}"]
 = Configuring {prod} for RHEL
 
-include::../modules/proc-rhel-selecting-jdk-rpm[leveloffset=+1]
+include::../modules/proc-rhel-selecting-jdk-rpm.adoc[leveloffset=+1]
 
 include::../modules/proc-rhel-selecting-jdk-rpm-non-interactively.adoc[leveloffset=+1]
 

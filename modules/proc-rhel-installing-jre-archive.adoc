@@ -2,9 +2,9 @@
 = Installing the JRE with the archive bundle on {rhel}
 
 The Java Runtime Environment (JRE) can be manually installed using the {archive} bundle.
-This is useful if the Java administrator does not have root privileges on the system. Note that
-it's recommended to create a parent directory containing your JREs and create a symlink to the
-latest JRE via a generic path. This eases upgrades to later versions.
+This is useful if the Java administrator does not have root privileges on the system.
+Note that it's recommended to create a parent directory containing your JREs and create a symlink to the latest JRE via a generic path.
+This eases upgrades to later versions.
 
 .Procedure
 . link:{openjdk-rhel-archive-download-url}[Download the JRE {archive} bundle] of {comp}.
