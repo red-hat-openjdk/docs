@@ -16,8 +16,9 @@ This is important as many scripts that reference the `JAVA_HOME` environment var
 . Extract the contents of the zip bundle to a directory of your choice.  See the note and caution above about spaces in the install path.
 . Update the `PATH` as below:
 +
+[source,subs="+quotes"]
 ----
-C:\> setx /m PATH "%PATH%;${YOUR_INSTALL_PATH}\bin"
+C:\> setx /m PATH "%PATH%;__<YOUR_INSTALL_PATH>__\bin"
 ----
 +
 [NOTE]
@@ -49,13 +50,14 @@ OpenJDK 64-Bit Server VM 18.9 (build 11.0.3-redhat+7-LTS, mixed mode)
 +
 Set the `%JAVA_HOME%` environment variable as
 +
+[source,subs="+quotes"]
 ----
-C:\> setx /m JAVA_HOME "${YOUR_INSTALL_PATH}"
+C:\> setx /m JAVA_HOME "_<YOUR_INSTALL_PATH>_"
 ----
 +
 [NOTE]
 ====
-`JAVA_HOME` will _not_ work if the bin directory is appended to ${YOUR_INSTALL_PATH}.
+`JAVA_HOME` will _not_ work if the `bin` directory is appended to your installation path.
 
 After restarting the command prompt, you can view your setting by typing `echo %JAVA_HOME%`.
 ====
