@@ -4,7 +4,7 @@
 Some applications will require you to set the `JAVA_HOME` environment variable in order for the application to find your Java installation.
 
 .Prerequisites
-. Have a JDK installed on your system at a known location. For example, at location `/opt/jdk/11`
+* Have a JDK installed on your system at a known location. For example, at location `/opt/jdk/11`
 
 .Procedure
 . Set the `JAVA_HOME` environment variable in bash

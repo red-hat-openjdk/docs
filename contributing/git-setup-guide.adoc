@@ -3,7 +3,7 @@
 
 Strimzi uses git to manage repositories.  This guide explains how to set up your system to connect to the proper git repositories.
 
-https://github.com/ncbaratta/RH-OpenJDK-Docs[`RH-OpenJDK-Docs`^] (GitHub):: A public GitHub repo that hosts all of the OpenJDK code and documentation.
+https://github.com/red-hat-openjdk/docs[`Red Hat OpenJDK Docs`^] (GitHub):: A public GitHub repo that hosts all of the OpenJDK code and documentation.
 
 [[install-git]]
 == Install git
@@ -54,7 +54,7 @@ $ git config --global push.default simple
 Fork the `RH-OpenJDK-Docs` upstream repository to create a copy under your own GitHub ID. This allows you to work on multiple features and push changes to branches in your own GitHub instance so that you do not have to worry about losing work. When you are ready, you can request the changes to be merged back into the upstream repository.
 
 .Procedure
-. Open a browser and navigate to the upstream repository located at link:https://github.com/ncbaratta/RH-OpenJDK-Docs[`https://github.com/ncbaratta/RH-OpenJDK-Docs`^]
+. Open a browser and navigate to the upstream repository located at link:https://github.com/red-hat-openjdk/docs[`https://github.com/red-hat-openjdk/docs`^]
 . Click *Fork* located in the upper right under your profile icon.
 . Select your user account for the location of the forked repository. This creates your own copy of the repository under your own GitHub ID.
 
@@ -105,9 +105,9 @@ NOTE: For more information about https://help.github.com/articles/fork-a-repo/[f
 +
 [source,options="nowrap",subs="+quotes"]
 ----
-$ git clone https://github.com/<username>/RH-OpenJDK-Docs
+$ git clone https://github.com/<username>/docs
 ----
-. Navigate to the newly created `RH-OpenJDK-Docs` folder.
+. Navigate to the newly created `docs` folder.
 +
 [source]
 ----
@@ -126,14 +126,14 @@ Once you have your fork checked out and cloned locally, add the downstream repos
 [source,options="nowrap",subs="+quotes"]
 ----
 $ git remote -v
-origin	git@github.com:<username>/RH-OpenJDK-Docs.git (fetch)
-origin	git@github.com:<username>/RH-OpenJDK-Docs.git (push)
+origin	git@github.com:<username>/docs.git (fetch)
+origin	git@github.com:<username>/docs.git (push)
 ----
 . Add the upstream as a remote repository and fetch its contents. This allows you to check out and work with the latest source code.
 +
 [source]
 ----
-$ git remote add -f upstream  git@github.com:ncbaratta/RH-OpenJDK-Docs.git
+$ git remote add -f upstream  git@github.com:red-hat-openjdk/docs.git
 ----
 . Enter your GitHub credentials to complete the remote add process.
 . Verify the new remote was added:
@@ -141,10 +141,10 @@ $ git remote add -f upstream  git@github.com:ncbaratta/RH-OpenJDK-Docs.git
 [source,options="nowrap",subs="+quotes"]
 ----
 $ git remote -v
-origin	git@github.com:<username>/RH-OpenJDK-Docs.git (fetch)
-origin	git@github.com:<username>/RH-OpenJDK-Docs.git (push)
-upstream	git@github.com:ncbaratta/RH-OpenJDK-Docs.git (fetch)
-upstream	git@github.com:ncbaratta/RH-OpenJDK-Docs.git (push)
+origin	git@github.com:<username>/docs.git (fetch)
+origin	git@github.com:<username>/docs (push)
+upstream	git@github.com:red-hat-openjdk/docs.git (fetch)
+upstream	git@github.com:red-hat-openjdk/docs.git (push)
 ----
 
 [[url-update]]
@@ -154,7 +154,7 @@ If the upstream repository is moved, you can change the downstream URL by using 
 
 [source]
 ----
-$ git remote set-url upstream https://github.com/ncbaratta/RH-OpenJDK-Docs.git
+$ git remote set-url upstream https://github.com/red-hat-openjdk/docs
 ----
 
 Use the following command any time you need to fetch the latest source code locally:

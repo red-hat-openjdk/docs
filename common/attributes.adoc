@@ -5,6 +5,11 @@
 :source-highlighter: prettify
 :last-update-label!:
 :attribute-missing: warn
+:toc: left
+:toclevels: 3
+:numbered:
+:sectanchors:
+:sectlinks:
 :experimental:
 
 // Guide directory structure
@@ -30,7 +35,7 @@
 :prod-ver: {comp-ver}
 :prod-ver-full: {comp-ver-full}
 :comp: {prod} {comp-ver} for Windows
-:prod-long-name: {prod} {prod-ver} for {platform}
+:prod-long-name: {rh} {prod} {prod-ver}
 :openjdk-ver: {comp-ver-full}
 
 // URL to version (8 or 11) specific rhel archive (tar.xz or zip)

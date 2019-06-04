@@ -9,6 +9,7 @@
 .Procedure
 . Run the application by adding maximum heap size option to your java command line. For example to set the maximum heap size to 100 megabytes use the `-Xmx100m` option.
 +
+[source,subs="+quotes"]
 ----
 $ java -Xmx100m `_<your-main-class>_`
 ----

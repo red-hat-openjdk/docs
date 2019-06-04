@@ -8,7 +8,7 @@ script.
 
 
 .Prerequisites
-. xref:proc-rhel-installing-multiple-major-versions.adoc[Have multiple JDKs installed] on your system using the `yum` package manager.
+* xref:proc-rhel-installing-multiple-major-versions.adoc[Have multiple JDKs installed] on your system using the `yum` package manager.
   It is recommended to install the full JDKs for this purpose. This can be done by installing `-devel` sub-packages.
 +
 ----
@@ -19,7 +19,7 @@ java-11-openjdk-devel
 java-11-openjdk-headless
 ----
 +
-. Ensure that an application you'd like to run is installed. In this example, Maven.
+* Ensure that an application you'd like to run is installed. In this example, Maven.
 
 .Procedure
 . Set the `JAVA_HOME` environment variable right before launching the application
@@ -40,3 +40,4 @@ Java home: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.el7_6.x86_64/jre
 Default locale: en_US, platform encoding: UTF-8
 OS name: "linux", version: "3.10.0-957.21.2.el7.x86_64", arch: "amd64", family: "unix"
 ----
+

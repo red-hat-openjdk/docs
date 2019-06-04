@@ -10,3 +10,5 @@ include::../modules/proc-rhel-installing-jre-rpm.adoc[leveloffset=+1]
 include::../modules/proc-rhel-installing-jre-archive.adoc[leveloffset=+1]
 
 include::../modules/proc-rhel-installing-multiple-major-versions.adoc[leveloffset=+1]
+
+include::../modules/proc-rhel-installing-multiple-minor-versions.adoc[leveloffset=+1]

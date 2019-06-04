@@ -4,7 +4,11 @@ include::common/attributes.adoc[]
 
 = Getting started with {prod}
 
-include::assemblies/assembly-getting-started.adoc[leveloffset=+1]
+include::modules/snip-openjdk-intro.adoc[]
+
+include::modules/ref-installation-options.adoc[leveloffset=+1]
+
+include::modules/con-distribution-selection.adoc[leveloffset=+1]
 
 //revision info
 include::common/revision-info.adoc[]

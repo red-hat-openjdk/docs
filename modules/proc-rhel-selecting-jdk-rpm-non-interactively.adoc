@@ -8,9 +8,9 @@ many systems in an automated way.
 
 .Prerequisites
 
-. root privileges on the system.
-. xref:proc-rhel-installing-multiple-major-versions.adoc[Have multiple JDKs installed] on your system using the `yum` package manager.
-. Know the desired Java major version which should get selected system wide ahead of time.
+* root privileges on the system.
+* xref:proc-rhel-installing-multiple-major-versions.adoc[Have multiple JDKs installed] on your system using the `yum` package manager.
+* Know the desired Java major version which should get selected system wide ahead of time.
 
 .Procedure
 . Set the `PKG_NAME` variable to the Java version you'd like to switch to. In our example, that's `java-11-openjdk` for Java 11.

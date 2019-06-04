@@ -1,0 +1,37 @@
+[id="rhel_install_multiple_minor_versions"]
+= Installing multiple minor versions of OpenJDK on RHEL    
+
+.Procedure
+
+. Add the `installonlypkgs` option to `/etc/yum.conf` to specify java packages that `yum` can install but never update.
++
+[source,subs="+quotes"]
+----
+installonlypkgs=java-_`<version>`_-openjdk,java-_`<version>`_--openjdk-headless,java-_`<version>`_--openjdk-devel
+----
+
+. Updates will install new packages, and the old ones will remain on the system:
++
+----
+#rpm -qa | grep java-1.8.0-openjdk
+java-1.8.0-openjdk-1.8.0.172-7.b11.el7.x86_64
+java-1.8.0-openjdk-headless-1.8.0.171-9.b12.el7.x86_64
+java-1.8.0-openjdk-devel-1.8.0.171-9.b12.el7.x86_64
+java-1.8.0-openjdk-headless-1.8.0.172-7.b11.el7.x86_64
+java-1.8.0-openjdk-1.8.0.171-9.b12.el7.x86_64
+java-1.8.0-openjdk-devel-1.8.0.172-7.b11.el7.x86_64
+----
+
+. The different versions of OpenJDK can be found in the `/usr/lib/jvm/_<version>_`
++
+----
+#/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-9.b12.el7.x86_64/bin/java -version
+openjdk version "1.8.0_171"
+OpenJDK Runtime Environment (build 1.8.0_171-b12)
+OpenJDK 64-Bit Server VM (build 25.171-b12, mixed mode)
+
+#/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.172-7.b11.el7.x86_64/bin/java -version
+openjdk version "1.8.0_172"
+OpenJDK Runtime Environment (build 1.8.0_172-b11)
+OpenJDK 64-Bit Server VM (build 25.172-b11, mixed mode)
+----
