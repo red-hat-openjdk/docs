@@ -1,3 +1,4 @@
+[id="rhel_install_multiple_minor_versions"]
 = Installing multiple minor versions of OpenJDK on RHEL    
 
 .Procedure
