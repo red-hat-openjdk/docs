@@ -1,5 +1,7 @@
 # RH-OpenJDK-Docs
 
+Documentation for the Red Hat distribution of OpenJDK
+
 ## Read the compiled guides
 
 * [Getting started with OpenJDK](https://red-hat-openjdk.github.io/docs/getting-started/index.html)
