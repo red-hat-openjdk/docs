@@ -51,7 +51,7 @@ $ git config --global push.default simple
 [[fork-upstream]]
 == Fork the upstream (GitHub) repository
 
-Fork the `RH-OpenJDK-Docs` upstream repository to create a copy under your own GitHub ID. This allows you to work on multiple features and push changes to branches in your own GitHub instance so that you do not have to worry about losing work. When you are ready, you can request the changes to be merged back into the upstream repository.
+Fork the `red-hat-openjdk/docs` upstream repository to create a copy under your own GitHub ID. This allows you to work on multiple features and push changes to branches in your own GitHub instance so that you do not have to worry about losing work. When you are ready, you can request the changes to be merged back into the upstream repository.
 
 .Procedure
 . Open a browser and navigate to the upstream repository located at link:https://github.com/red-hat-openjdk/docs[`https://github.com/red-hat-openjdk/docs`^]
@@ -111,7 +111,7 @@ $ git clone https://github.com/<username>/docs
 +
 [source]
 ----
-$ cd RH-OpenJDK-Docs/
+$ cd docs/
 ----
 
 
