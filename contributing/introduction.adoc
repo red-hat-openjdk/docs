@@ -1,6 +1,6 @@
 = Introduction
 
-This guide is meant to assist contributors to the OpenJDK documentation.
+This guide is meant to assist contributors to the Red Hat distribution of OpenJDK documentation.
 
 == Dependencies
 
