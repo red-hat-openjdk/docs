@@ -41,7 +41,6 @@ javac 11.0.3
 // Example URL: https://access.redhat.com/solutions/1445833 (for JAVA_HOME)
 . In order to persist the `PATH` variable setting use these instructions: _`<add-link-to-RHEL-bashrc-path-link>`_
 
-The `JAVA_HOME` environment variable must also be set to use some developer tools.
-Set the `JAVA_HOME` environment variable as follows:
+. The `JAVA_HOME` environment variable must also be set to use some developer tools.
 
-include::../modules/proc-rhel-setting-java-home-env-variable.adoc[]
+include::../modules/snip-rhel-setting-java-home.adoc[]

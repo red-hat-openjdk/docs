@@ -1,7 +1,7 @@
 [id='select-specific_JDK_procedure_perapplication']
 = Selecting a specific JDK from the installed versions for an application
 
-You can select a specific JDK from the installed versions on {msw} for an application. 
+You can select a specific JDK from the installed versions on {msw} for an application.
 
 .Prerequisites
 
@@ -9,7 +9,7 @@ You can select a specific JDK from the installed versions on {msw} for an applic
 
 .Procedure
 
-. Log in as a Windows system administrator. 
+. Log in as a Windows system administrator.
 
 . On the command line, set the prompt to `C:/`.
 

@@ -1,7 +1,7 @@
 [id="rhel_installing_openjdk_jre_rpm"]
 = Installing the Java Runtime Environment via yum on {rhel}
 
-{comp} can be installed using the system package manager `yum`. 
+{comp} can be installed using the system package manager `yum`.
 
 .Prequisites
 * A user with root privileges.

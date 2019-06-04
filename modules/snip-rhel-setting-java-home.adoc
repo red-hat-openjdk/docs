@@ -1,0 +1,19 @@
+. Set the `JAVA_HOME` environment variable in bash
++
+----
+$ export JAVA_HOME=/opt/jdk/11
+----
++
+. Verify `JAVA_HOME` is set correctly:
++
+----
+$ printenv | grep JAVA_HOME
+JAVA_HOME=/opt/jdk/11
+----
++
+
+[NOTE]
+====
+Persisting the `JAVA_HOME` variable for the current user can be achieved by exporting the enviroment variable
+in `~/.bashrc`.
+====
