@@ -505,7 +505,7 @@ Windows builds use Red&#160;Hat Enterprise&#160;Linux RPM sources and apply all 
 <p>Update the <code>PATH</code> as below:</p>
 <div class="listingblock">
 <div class="content">
-<pre>C:\&gt; setx /m PATH "%PATH%;${YOUR_INSTALL_PATH}\bin"</pre>
+<pre class="prettyprint highlight"><code>C:\&gt; setx /m PATH "%PATH%;<em>&lt;YOUR_INSTALL_PATH&gt;</em>\bin"</code></pre>
 </div>
 </div>
 <div class="admonitionblock note">
@@ -554,7 +554,7 @@ OpenJDK 64-Bit Server VM 18.9 (build 11.0.3-redhat+7-LTS, mixed mode)</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>C:\&gt; setx /m JAVA_HOME "${YOUR_INSTALL_PATH}"</pre>
+<pre class="prettyprint highlight"><code>C:\&gt; setx /m JAVA_HOME "<em>&lt;YOUR_INSTALL_PATH&gt;</em>"</code></pre>
 </div>
 </div>
 <div class="admonitionblock note">
@@ -565,7 +565,7 @@ OpenJDK 64-Bit Server VM 18.9 (build 11.0.3-redhat+7-LTS, mixed mode)</pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p><code>JAVA_HOME</code> will <em>not</em> work if the bin directory is appended to ${YOUR_INSTALL_PATH}.</p>
+<p><code>JAVA_HOME</code> will <em>not</em> work if the <code>bin</code> directory is appended to your installation path.</p>
 </div>
 <div class="paragraph">
 <p>After restarting the command prompt, you can view your setting by typing <code>echo %JAVA_HOME%</code>.</p>
@@ -974,7 +974,7 @@ OpenJDK 64-bit Server VM (build 11.0.3+7-LTS, mixed mode)</pre>
 </ul>
 </div>
 <div class="paragraph">
-<p><em>Revised on 2019-06-03 08:25:57 EDT</em></p>
+<p><em>Revised on 2019-06-04 11:00:20 EDT</em></p>
 </div>
 </div>
 </div>
