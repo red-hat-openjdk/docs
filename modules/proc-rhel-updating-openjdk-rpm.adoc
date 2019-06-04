@@ -8,7 +8,7 @@ The {comp} RPM-based installer can be updated using the system package manager `
 * A user with root privileges.
 
 .Procedure
-. Check the current {comp} version. 
+. Check the current {comp} version.
 +
 ----
 yum list installed java*
@@ -26,5 +26,3 @@ yum update _`<version_to_be_upgraded>`_
 ----
 java -version
 ----
-+
-

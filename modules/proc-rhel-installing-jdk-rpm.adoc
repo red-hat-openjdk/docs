@@ -17,4 +17,3 @@ privileges.
 $ javac -version
 javac 11.0.3
 ----
-+

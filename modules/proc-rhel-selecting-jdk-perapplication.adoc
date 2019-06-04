@@ -40,4 +40,3 @@ Java home: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.el7_6.x86_64/jre
 Default locale: en_US, platform encoding: UTF-8
 OS name: "linux", version: "3.10.0-957.21.2.el7.x86_64", arch: "amd64", family: "unix"
 ----
-+

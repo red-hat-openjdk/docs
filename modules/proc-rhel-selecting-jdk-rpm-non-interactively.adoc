@@ -32,7 +32,6 @@ OpenJDK 64-Bit Server VM 18.9 (build 11.0.3+7-LTS, mixed mode, sharing)
 ----
 +
 
-
 [NOTE]
 ====
 If you wanted to switch to Java 8, set `PKG_NAME=java-1.8.0-openjdk`, instead.
