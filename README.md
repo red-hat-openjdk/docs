@@ -1,4 +1,4 @@
-# RH-OpenJDK-Docs
+# Red Hat OpenJDK Documentation
 
 Documentation for the Red Hat distribution of OpenJDK
 
