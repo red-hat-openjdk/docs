@@ -28,10 +28,3 @@ Bold (`*`)::
 |Item |Example
 |GUI items _(menus, buttons)_|Click the \*Add* button and ...
 |===
-
-Underline (`[.underline]#value#`)::
-[cols="50%,50%",options="header"]
-|===
-|Item |Example
-|Default item in a multi-select|\`yes\|[.underline]\#no#\|maybe`
-|===
