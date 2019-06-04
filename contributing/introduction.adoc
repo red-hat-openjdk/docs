@@ -1,6 +1,6 @@
 = Introduction
 
-This guide is meant to assist contributors to the Strimzi documentation.
+This guide is meant to assist contributors to the OpenJDK documentation.
 
 == Dependencies
 
