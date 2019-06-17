@@ -8,7 +8,7 @@ The recommended approach to update {archive} install of {prod} is to
 redirect the generic path symlink of your JRE or JDK to the latest
 installed package.
 
-.Prequisites
+.Prerequisites
 
 * Know the generic path pointing to your JDK or JRE installation. For example, `~/jdks/java-11`
 
