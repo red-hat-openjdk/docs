@@ -3,23 +3,25 @@
 
 If you have multiple JDKs installed on {rhel} you can select a
 specific JDK using the `alternatives` command. Selecting the JDK by using this
-approach changes the default `java` system wide and requires root privileges.
+approach changes the default `java` and `javac` system wide. Changing these settings
+will require root privileges.
 See xref:proc-rhel-setting-java-home-env-variable.adoc[setting `JAVA_HOME` variable]
-documentation if you need to select a JDK without root privileges or for
-per-application selection of a specific JDK.
+documentation if you need to select a specific JDK without root privileges.
 
 .Prerequisites
 * root privileges on the system.
 * xref:proc-rhel-installing-multiple-major-versions.adoc[Have multiple JDKs installed] on your system using the `yum` package manager.
 
 .Procedure
-. See the automatically selected Java before switching to a different one
+. See the automatically selected JDK before switching to a different one
 +
 ----
 # java -version
 openjdk version "1.8.0_212"
 OpenJDK Runtime Environment (build 1.8.0_212-b04)
 OpenJDK 64-Bit Server VM (build 25.212-b04, mixed mode)
+# javac -version
+javac 1.8.0_212
 ----
 +
 . Show commands available via `alternatives`
@@ -61,8 +63,10 @@ OpenJDK Runtime Environment 18.9 (build 11.0.3+7-LTS)
 OpenJDK 64-Bit Server VM 18.9 (build 11.0.3+7-LTS, mixed mode, sharing)
 ----
 +
+. Repeat the `alternatives --config` step for `javac`
 
 [NOTE]
 ====
-If you have the JDK installed (over the JRE), more selections will be available for you to select using `alternatives`. In particular, the `javac` master alternative switches many binaries provided by the `-devel` sub-package.
+By switching the `javac` master `alternatives` link many slave links for binaries provided
+by the `-devel` sub-package will switch too.
 ====
