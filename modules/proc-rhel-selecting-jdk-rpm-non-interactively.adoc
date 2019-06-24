@@ -3,18 +3,20 @@
 
 If you have multiple JDKs installed using the `yum` package manager on {rhel} you can
 non-interactively select a specific JDK, system wide, using the following procedure. This is useful
-for administrators who have root privileges on a {rhel} system and need to switch the default Java on
-many systems in an automated way.
+for administrators who have root privileges on a {rhel} system and need to switch the default JDK on
+many systems in an automated way. Note that `java` and `javac` are handled by independent alternatives
+settings. For the purpose of this procedure we assume that `java` (JRE) and `javac` (JDK) should get
+switched in tandem.
 
 .Prerequisites
 
 * root privileges on the system.
 * xref:proc-rhel-installing-multiple-major-versions.adoc[Have multiple JDKs installed] on your system using the `yum` package manager.
-* Know the desired Java major version which should get selected system wide ahead of time.
+* Know the desired JDK major version which should get selected system wide ahead of time.
 
 .Procedure
-. Set the `PKG_NAME` variable to the Java version you'd like to switch to. In our example, that's `java-11-openjdk` for Java 11.
-  Then switch to the Java selection using the `alternatives --set` command.
+. Set the `PKG_NAME` variable to the JDK version you'd like to switch to. In our example, that's `java-11-openjdk` for JDK 11.
+  Then switch to the JDK selection using the `alternatives --set` command.
 +
 ----
 # PKG_NAME=java-11-openjdk
@@ -22,7 +24,7 @@ many systems in an automated way.
 # alternatives --set java $JAVA_TO_SELECT
 ----
 +
-. Verify the selected Java is the desired version
+. Verify the selected JRE is the desired version
 +
 ----
 # java -version
@@ -31,8 +33,27 @@ OpenJDK Runtime Environment 18.9 (build 11.0.3+7-LTS)
 OpenJDK 64-Bit Server VM 18.9 (build 11.0.3+7-LTS, mixed mode, sharing)
 ----
 +
+. Repeat the same procedure for `javac`.
++
+----
+# PKG_NAME=java-11-openjdk
+# JAVA_TO_SELECT=$(alternatives --display javac | grep "family $PKG_NAME" | cut -d' ' -f1)
+# alternatives --set javac $JAVA_TO_SELECT
+----
++
+. Verify the selected JDK is the desired version
++
+----
+# javac -version
+javac 11.0.3
+----
++
+
 
 [NOTE]
 ====
-If you wanted to switch to Java 8, set `PKG_NAME=java-1.8.0-openjdk`, instead.
+If you wanted to switch to JDK 8, set `PKG_NAME=java-1.8.0-openjdk`, instead. Should you have
+multiple minor JDK versions installed on the same system the above example will **not** work. Please
+use the `family` value of the `alternatives --display` output in order to select the desired major
+JDK version. Then select the desired minor version from the list.
 ====
