@@ -1,0 +1,7 @@
+[id="dictionary"]
+= Terms
+
+INTRO HERE
+
+TERM::
+Definition
