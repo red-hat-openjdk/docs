@@ -1,5 +1,5 @@
 [id="rhel_install_multiple_minor_versions"]
-= Installing multiple minor versions of OpenJDK on RHEL    
+= Installing multiple minor versions of OpenJDK on RHEL
 
 .Procedure
 
@@ -35,7 +35,8 @@ openjdk version "1.8.0_172"
 OpenJDK Runtime Environment (build 1.8.0_172-b11)
 OpenJDK 64-Bit Server VM (build 25.172-b11, mixed mode)
 ----
-
-. Support
-
-Only the latest minor version is supported if there is a crash or other issue requiring a patch. In addition, OpenJDK is dependent on OS libraries, so only specific versions/kernels combinations are tested/supported. 
++
+NOTE
+====
+Only the latest minor version is supported if there is a crash or other issue requiring a patch. In addition, OpenJDK is dependent on OS libraries, so only specific versions/kernels combinations are tested/supported.
+====
