@@ -47,3 +47,6 @@
 
 // RH docs
 :rh-docs-url: https://access.redhat.com/documentation/en-us
+
+// RH JAVA_HOME Path
+:RHEL-bashrc-path-link: https://access.redhat.com/solutions/1445833
