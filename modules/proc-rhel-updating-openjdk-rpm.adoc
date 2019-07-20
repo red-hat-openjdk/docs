@@ -3,7 +3,7 @@
 
 The {comp} RPM-based installer can be updated using the system package manager `yum`.
 
-.Prequisites
+.Prerequisites
 
 * A user with root privileges.
 
