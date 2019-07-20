@@ -3,14 +3,14 @@
 
 {comp} can be installed using the system package manager `yum`.
 
-.Prequisites
+.Prerequisites
 * A user with root privileges.
 
 .Procedure
 . Run the relevant `yum` command for installing the package. For example: `java-1.8.0-openjdk` for JDK 8
 +
 ----
-# yum install java-8-openjdk
+# yum install java-1.8.0-openjdk
 ----
 +
 . Verify that `java -version` works
