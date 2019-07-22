@@ -27,7 +27,7 @@ $ ln -s ~/jres/_`<your-directory>`_ ~/jres/_`<major-version>`_
 +
 [source,subs="+quotes"]
 ----
-$ export PATH="$PATH:$(echo ~)/jres/_`<major-version>`_/bin"
+$ export PATH="$(echo ~)/jres/_`<major-version>`_/bin:$PATH"
 ----
 +
 . Verify that `java -version` works without supplying the full path:
@@ -41,8 +41,28 @@ OpenJDK 64-Bit Server VM (build 25.181.-b13, mixed mode)
 +
 
 // Example URL: https://access.redhat.com/solutions/1445833 (for JAVA_HOME)
-. In order to persist the `PATH` variable setting use these instructions: _`<add-link-to-RHEL-bashrc-path-link>`_
+. In order to persist the `PATH` variable setting use these instructions: 
+link:{RHEL-bashrc-path-link}[How to set the JAVA_HOME environment variable]
 
 . The `JAVA_HOME` environment variable must also be set to use some developer tools.
 
-include::../modules/snip-rhel-setting-java-home.adoc[]
+. Set the `JAVA_HOME` environment variable in bash
++
+----
+$ export JAVA_HOME=/jres/_`<major-version>`_
+----
++
+. Verify `JAVA_HOME` is set correctly:
++
+----
+$ printenv | grep JAVA_HOME
+JAVA_HOME=/jres/_`<major-version>`_
+----
++
+
+[NOTE]
+====
+Persisting the `JAVA_HOME` variable for the current user can be achieved by exporting the enviroment variable
+in `~/.bashrc`.
+====
+// include::../modules/snip-rhel-setting-java-home.adoc[]
