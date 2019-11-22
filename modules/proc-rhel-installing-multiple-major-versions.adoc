@@ -9,7 +9,8 @@ If you are running multiple OpenJDK applications that require different JDK vers
 
 .Procedure
 
-. On the command line, run the following commands to install multiple versions:
+On the command line, run the following commands to install multiple versions:
+
 +
 [source,subs="+quotes"]
 ----
