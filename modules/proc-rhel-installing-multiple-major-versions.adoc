@@ -16,7 +16,7 @@ If you are running multiple Java applications that require different Java versio
 **** java-11-openjdk
 ... Click the architecture link (for example, `x86_64`). Repositories are listed in the *Repo List* column (for example, `rhel-7-server-rpms`).
 
-. On the command line, run the following commands to install multiple versions:
+On the command line, run the following commands to install multiple versions:
 +
 [source,subs="+quotes"]
 ----
