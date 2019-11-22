@@ -1,7 +1,7 @@
 [id="installing-multiple-major-versions-openjdk']
 = Installing multiple major versions of OpenJDK
 
-If you are running multiple Java applications that require different Java versions you might need to install multiple major versions at the same time.
+If you are running multiple OpenJDK applications that require different JDK versions you might need to install multiple major versions at the same time.
 
 .Procedure
 
