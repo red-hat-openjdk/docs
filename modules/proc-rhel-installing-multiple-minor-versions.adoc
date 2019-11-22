@@ -3,14 +3,16 @@
 
 .Procedure
 
-. Add the `installonlypkgs` option to `/etc/yum.conf` to specify java packages that `yum` can install but never update.
+. Add the `installonlypkgs` option to `/etc/yum.conf` to specify OpenJDK packages that `yum` can install but never update. For example:
 +
 [source,subs="+quotes"]
 ----
 installonlypkgs=java-_`<version>`_-openjdk,java-_`<version>`_--openjdk-headless,java-_`<version>`_--openjdk-devel
 ----
 
-. Updates will install new packages, and the old ones will remain on the system:
+There are number of additional OpenJDK packages (e.g. java-11-openjdk-demo, java-11-openjdk-devel-debuginfo, etc.). Specify all packages you want different minor versions.
+
+. Updates will install new packages, and the old ones will remain on the system. For example:
 +
 ----
 #rpm -qa | grep java-1.8.0-openjdk
