@@ -3,18 +3,11 @@
 
 If you are running multiple Java applications that require different Java versions you might need to install multiple major versions at the same time.
 
-.Procedure
+.Prerequisites
 
-. Verify the Red Hat Subscription Manager (RHSM) account has an active subscription that provides access to a repository that provides the OpenJDK version.
-** To check available repositories:
-... Log into the link:https://access.redhat.com[Red Hat Customer Portal (RHCP)].
-... Click *Downloads*.
-... Click *RPM Package Search*.
-... Enter the OpenJDK version to be installed. For example:
-**** java-1.7.0-openjdk
-**** java-1.8.0-openjdk
-**** java-11-openjdk
-... Click the architecture link (for example, `x86_64`). Repositories are listed in the *Repo List* column (for example, `rhel-7-server-rpms`).
+* A user with root privileges.
+
+.Procedure
 
 . On the command line, run the following commands to install multiple versions:
 +
