@@ -4,6 +4,9 @@
 {comp} can be installed using the system package manager `yum`. This will require root
 privileges.
 
+.Prerequisites
+. No Java Development Kit (JDK) is installed
+
 .Procedure
 . Run the relevant `yum` command for installing the package: `java-1.8.0-openjdk-devel` for JDK 8, `java-11-openjdk-devel` for JDK 11
 +
@@ -18,3 +21,7 @@ $ javac -version
 javac 11.0.3
 ----
 
+[NOTE]
+====
+Depending on the default JDK selection priority for your {rhel} system via `alternatives`, either version 8 or version 11 will be default. See xref:proc-rhel-selecting-jdk-rpm.adoc[Selecting a specific JDK on {rhel}] for details.
+====
