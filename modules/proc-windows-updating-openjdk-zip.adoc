@@ -19,7 +19,7 @@ include::../modules/snip-windows-add-java-home-env-variable.adoc[]
 . Set the value of path variable if it is not set already:
 +
 ----
-C:\> setx -m PATH "%PATH%;%JAVA_HOME%\bin";
+C:\> setx /m PATH "%PATH%;%JAVA_HOME%\bin";
 ----
 
 . Restart the command prompt to reload the environment variables.
