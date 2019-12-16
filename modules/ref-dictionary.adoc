@@ -1,7 +1,29 @@
 [id="dictionary"]
 = Terms
 
-INTRO HERE
+Common acronyms used in this guide are defined here.
 
-TERM::
-Definition
+OpenJDK::
+Open Java Development Kit (OpenJDK) is a free and open-source implementation of
+the Java Platform, Standard Edition (Java SE). The default JVM included in
+OpenJDK is called HotSpot.
+
+JDK::
+The Java Development Kit (JDK) is generally referred to as the toolset needed
+to develop and debug Java applications. For example the JDK includes tools such
+as the Java compiler, `javac`, and the `jlink` tool - for JDK version 9 and
+above.
+
+JRE::
+The Java Runtime Environment (JRE) is a strict subset of the JDK and contains
+the runtime environment for compiled Java applications. This includes the
+`java` executable and other runtime tools, part of the JRE distribution. The
+concept of the JRE has been discontinued with JDK 9 and above in favour of
+creating smaller applications with a bundled runtime via the `jlink` tool.
+
+JVM::
+Java Virtual Machine. The low level execution enviroment for Java bytecode.
+
+MSI::
+`.MSI` is the filename extension of Windows Installer (previously known as
+Microsoft Installer) packages.
