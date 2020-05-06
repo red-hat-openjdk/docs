@@ -17,7 +17,7 @@ image::../images/win_missioncontrol.png[{prod} entities]
 . On the command line, start the JMC Client by entering `jmc` or the the full path to the JMC executable.
 +
 ----
-JAVA_HOME\missioncontrol\jmc.exe
+%JAVA_HOME%\missioncontrol\jmc.exe
 ----
 
 . On the JMC Client screen, create a new connection from the File Menu, choose your JVM, and start JMX console.
